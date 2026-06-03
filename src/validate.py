@@ -41,7 +41,7 @@ KNOWN_CROPS = {
     "sorghum", "millet", "groundnut", "banana", "sweet potato", "irish potato",
     "onion", "pepper", "okra", "amaranth", "cabbage", "watermelon",
     "coffee", "cocoa", "cotton", "cashew", "tea", "oil palm",
-    "beans", "soybean", "sunflower", "coconut", "pigeon pea",
+    "plantain", "beans", "soybean", "sunflower", "coconut", "pigeon pea",
     "sugarcane", "wheat", "barley", "teff",
 }
 
@@ -65,7 +65,7 @@ DANGEROUS_PATTERNS = [
     # Recommending diesel/petrol as pesticide
     (r"(apply|spray|use).{0,20}(diesel|petrol|kerosene).{0,20}(pesticide|insecticide|spray)", "fuel as pesticide"),
     # Consuming unsafe parts
-    (r"(eat|chop|consume).{0,30}(rotten|spoiled|moldy|mouldy|diseased)", "eating unsafe produce"),
+    (r"(?<!do not )(?<!don.t )(?<!never )(?<!avoid )(eat|chop|consume).{0,30}(rotten|spoiled|moldy|mouldy|diseased)", "eating unsafe produce (affirmative advice only)"),
 ]
 
 MIN_ANSWER_LENGTH = 100  # characters — shorter answers are suspicious

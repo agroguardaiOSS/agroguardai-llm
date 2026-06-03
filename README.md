@@ -29,21 +29,29 @@ agroguardai-llm/
 ├── LICENSE                    ← Apache 2.0
 ├── requirements.txt           ← All Python dependencies
 ├── .gitignore                 ← Python + Hugging Face + model artefacts
+├── .github/workflows/
+│   └── validate-qa.yml        ← CI: validates dataset schema & safety on every PR
 ├── config/
 │   └── lora_config.yaml       ← LoRA hyperparameters (r, alpha, dropout, target modules)
 ├── data/
 │   ├── README.md              ← Data collection logbook
-│   ├── agri_qa.json           ← Seed dataset: 10 farmer Q&A pairs in dialect
+│   ├── CONTRIBUTING.md        ← Contributor guide: how to write great QA pairs
+│   ├── qa_template.json       ← Copy-paste template with worked examples
+│   ├── agri_qa.json           ← 100 farmer Q&A pairs in 12 dialects
 │   └── processed/             ← Tokenized datasets land here (gitignored)
+├── notebooks/
+│   └── colab_train.ipynb      ← One-click Colab training notebook (free T4 GPU)
 ├── src/
 │   ├── preprocess.py          ← Format → tokenize → push to Hub
 │   ├── train.py               ← QLoRA fine-tuning (Mistral-7B / TinyLlama)
 │   ├── inference.py           ← Load LoRA adapter → answer farmer questions
-│   └── evaluate.py            ← Side-by-side eval against GPT-5, Claude, etc.
+│   ├── evaluate.py            ← Side-by-side eval against GPT-5, Claude, etc.
+│   └── validate.py            ← QA pair validator (schema, safety, dialect, banned pesticides)
 ├── scripts/
 │   ├── train.sh               ← One-command training entrypoint
 │   ├── inference.sh           ← Interactive inference shell
-│   └── evaluate.sh            ← Run the full cross-model benchmark
+│   ├── evaluate.sh            ← Run the full cross-model benchmark
+│   └── generate_dataset.py    ← Synthetic dataset expansion tool
 └── models/
     └── .gitkeep               ← Downloaded base models & saved adapters
 ```
@@ -79,10 +87,23 @@ answer = model.ask("My tomato leaf get black spot for underside. Wetin I fit do?
 print(answer)
 ```
 
-### 3. Fine-Tune
+### 3. Train on GPU (Free Colab)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/agroguardaiaOS/agroguardai-llm/blob/main/notebooks/colab_train.ipynb)
+
+Click the badge above to open the notebook in Colab with a free T4 GPU. The notebook:
+1. Installs all dependencies
+2. Clones the repo and preprocesses the dataset
+3. Runs QLoRA fine-tuning on Mistral-7B (8-bit paged AdamW)
+4. Saves the adapter to your Google Drive
+5. Runs a test inference
+
+Training 100 samples for 3 epochs takes ~45 minutes on a T4.
+
+### 4. Train Locally
 
 ```bash
-# 1. Prepare data
+# 1. Preprocess data
 python src/preprocess.py --data data/agri_qa.json --output data/processed/
 
 # 2. Review LoRA config, then train
@@ -92,7 +113,7 @@ bash scripts/train.sh
 Edit `config/lora_config.yaml` to switch between Mistral-7B and TinyLlama, adjust rank,
 or toggle 4-bit quantization.
 
-### 4. Evaluate
+### 5. Evaluate
 
 ```bash
 # Runs our model head-to-head against GPT-5, Claude, Grok, DeepSeek, Gemini
@@ -121,8 +142,9 @@ bash scripts/evaluate.sh
 
 ## Dataset
 
-The seed dataset (`data/agri_qa.json`) contains 10 realistic farmer questions spanning
-multiple crops, regions, and dialects. Each entry includes:
+The dataset (`data/agri_qa.json`) contains **100 farmer Q&A pairs** in 12 dialects
+(Amharic, English, Hausa, Hindi, Igbo, Kikuyu, Luo, Pidgin English, Punjabi, Swahili,
+Tamil, Yoruba) spanning 11 crops across 6 regions. Each entry includes:
 
 - `id` — Unique identifier
 - `region` — Country / growing zone

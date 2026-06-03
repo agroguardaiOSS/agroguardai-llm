@@ -37,7 +37,7 @@ agroguardai-llm/
 │   ├── README.md              ← Data collection logbook
 │   ├── CONTRIBUTING.md        ← Contributor guide: how to write great QA pairs
 │   ├── qa_template.json       ← Copy-paste template with worked examples
-│   ├── agri_qa.json           ← 100 farmer Q&A pairs in 12 dialects
+│   ├── agri_qa.json           ← 500 farmer Q&A pairs in 12 dialects
 │   └── processed/             ← Tokenized datasets land here (gitignored)
 ├── notebooks/
 │   └── colab_train.ipynb      ← One-click Colab training notebook (free T4 GPU)
@@ -98,13 +98,13 @@ Click the badge above to open the notebook in Colab with a free T4 GPU. The note
 4. Saves the adapter to your Google Drive
 5. Runs a test inference
 
-Training 100 samples for 3 epochs takes ~45 minutes on a T4.
+Training 452 entries for 2 epochs takes ~90 minutes on a T4.
 
 ### 4. Train Locally
 
 ```bash
-# 1. Preprocess data
-python src/preprocess.py --data data/agri_qa.json --output data/processed/
+# 1. Preprocess data (use pre-split train/test sets)
+python src/preprocess.py --data data/processed/train.json --output data/processed/ --val-data data/processed/test.json --seed 42
 
 # 2. Review LoRA config, then train
 bash scripts/train.sh
@@ -116,23 +116,21 @@ or toggle 4-bit quantization.
 ### 5. Evaluate
 
 ```bash
-# Runs our model head-to-head against GPT-5, Claude, Grok, DeepSeek, Gemini
+# Runs our model head-to-head against GPT-4, Claude, DeepSeek
 # on safety, dialect fidelity, and hallucination rate
 bash scripts/evaluate.sh
 ```
 
 ## Results
 
-*Placeholder — fill after your evaluation run.*
+*To be filled after evaluation run — results are stored in `results/evaluation_report.json`.*
 
-| Model | Safety (0–1) | Dialect Fidelity | Hallucination Rate | BLEU |
+| Model | Safety (0-1) | Dialect Fidelity | Hallucination Rate | BLEU |
 |-------|-------------|------------------|--------------------|------|
 | **AgroguardAI-LLM** | — | — | — | — |
-| GPT-5 | — | — | — | — |
+| GPT-4 | — | — | — | — |
 | Claude 4 | — | — | — | — |
-| Grok 3 | — | — | — | — |
 | DeepSeek V3 | — | — | — | — |
-| Gemini 2.5 Pro | — | — | — | — |
 
 **Metrics:**
 - **Safety** — Does the answer avoid dangerous or banned recommendations?
@@ -142,9 +140,17 @@ bash scripts/evaluate.sh
 
 ## Dataset
 
-The dataset (`data/agri_qa.json`) contains **100 farmer Q&A pairs** in 12 dialects
+The dataset (`data/agri_qa.json`) contains **500 farmer Q&A pairs** in 12 dialects
 (Amharic, English, Hausa, Hindi, Igbo, Kikuyu, Luo, Pidgin English, Punjabi, Swahili,
-Tamil, Yoruba) spanning 11 crops across 6 regions. Each entry includes:
+Tamil, Yoruba) spanning **25 crops** across **9 regions**. The dataset is split into:
+- **Train set** (`data/processed/train.json`): 452 entries
+- **Held-out test set** (`data/processed/test.json`): 48 entries (4 per dialect, stratified)
+
+~83% of entries have diagnostic, evidence-backed answers with specific treatment rates,
+application methods, and safety intervals. ~17% are safe refusal responses for ambiguous
+symptoms that require in-person diagnosis.
+
+Each entry includes:
 
 - `id` — Unique identifier
 - `region` — Country / growing zone
@@ -168,7 +174,9 @@ The LoRA adapter is ~50 MB and can be shared on Hugging Face Hub alongside the b
 
 ## Roadmap
 
-- [ ] Expand dataset to 1,000+ verified Q&A pairs across 10 languages
+- [x] Expand dataset to 500+ verified Q&A pairs across 12 dialects
+- [ ] Evaluate against GPT-4, Claude, and DeepSeek on safety and dialect fidelity
+- [ ] Expand dataset to 1,000+ verified Q&A pairs across 15 languages
 - [ ] Add vision encoder for crop disease photos
 - [ ] Distill to a 1–3B model for on-device inference
 - [ ] Integrate with WhatsApp and Telegram bots for direct farmer access

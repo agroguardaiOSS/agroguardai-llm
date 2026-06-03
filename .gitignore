@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+.venv/
+venv/
+
+# Models & adapters (large binaries)
+models/*
+!models/.gitkeep
+
+# Processed datasets
+data/processed/*
+!data/processed/.gitkeep
+
+# Hugging Face cache
+.cache/
+huggingface/
+
+# Environment
+.env
+*.env.local
+
+# Training artefacts
+checkpoint-*/
+runs/
+wandb/
+*.pt
+*.bin
+*.safetensors
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

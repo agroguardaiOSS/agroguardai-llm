@@ -1,0 +1,94 @@
+# LoRA / QLoRA Configuration — AgroguardAI-LLM
+# -------------------------------------------
+# Edit this file to switch models, change rank, or toggle quantization.
+
+model:
+  # Base model ID from Hugging Face Hub
+  base_model: "mistralai/Mistral-7B-Instruct-v0.3"
+
+  # Alternative: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  # base_model: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+
+  # Tokenizer (defaults to base_model if empty)
+  tokenizer: ""
+
+  # Maximum sequence length for tokenization
+  max_seq_length: 2048
+
+quantization:
+  # Enable 4-bit quantization (QLoRA). Set to false for standard LoRA.
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: "bfloat16"
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+
+lora:
+  # Low-rank adaptation dimension
+  r: 16
+
+  # Scaling factor
+  alpha: 32
+
+  # Regularisation dropout on LoRA layers
+  dropout: 0.05
+
+  # Which modules to apply LoRA to — "all-linear" covers q_proj, k_proj,
+  # v_proj, o_proj, gate_proj, up_proj, down_proj in LLaMA/Mistral archs.
+  target_modules:
+    - "all-linear"
+
+  # Task type for PEFT
+  task_type: "CAUSAL_LM"
+
+training:
+  # Per-device batch size (adjust for your GPU)
+  per_device_train_batch_size: 2
+
+  # Gradient accumulation steps (effective batch = per_device * grad_accum)
+  gradient_accumulation_steps: 4
+
+  # Number of training epochs
+  num_train_epochs: 3
+
+  # Learning rate
+  learning_rate: 2.0e-4
+
+  # LR schedule
+  lr_scheduler_type: "cosine"
+
+  # Warmup ratio
+  warmup_ratio: 0.03
+
+  # Weight decay
+  weight_decay: 0.01
+
+  # Logging & checkpoint frequency (steps)
+  logging_steps: 10
+  save_steps: 100
+  eval_steps: 100
+
+  # Maximum gradient norm (gradient clipping)
+  max_grad_norm: 0.3
+
+  # Mixed-precision training
+  fp16: false
+  bf16: true
+
+  # Optimizer: "adamw_torch" or "paged_adamw_8bit" (QLoRA recommended)
+  optim: "paged_adamw_8bit"
+
+  # Enable gradient checkpointing to save memory
+  gradient_checkpointing: true
+
+  # Pack multiple short sequences into one input to reduce padding waste
+  packing: false
+
+  # Dataset text field name
+  dataset_text_field: "text"
+
+output:
+  # Where to save the LoRA adapter
+  adapter_dir: "models/agroguardai-lora-adapter"
+
+  # Hugging Face Hub repo to push to (set empty string to skip)
+  hub_model_id: "agroguardaiaOS/agroguardai-llm-lora"

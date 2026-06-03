@@ -1,0 +1,92 @@
+[
+  {
+    "id": "agri-001",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cassava",
+    "question": "Eku agba mi, mo ri awon leaf mi ti won n yellow, mo si ri awon small white fly ni abe leaf. Kini mo le se?",
+    "answer": "What you are describing is cassava whitefly (Bemisia tabaci). The yellowing leaves and white flies underneath are classic signs. Do NOT spray any insecticide yet — many are too harsh and will kill beneficial insects. Here is what to do: (1) Remove and burn the worst-affected leaves (away from the field). (2) Plant sunn hemp or marigold as a border crop — whiteflies avoid them. (3) If the infestation covers more than half the plants, apply neem oil at 5ml per liter of water, spraying ONLY under the leaves, once every 7 days for 3 weeks. The neem will not poison your soil or your family.",
+    "source": "IITA Cassava Pest Management Guide, 2023; reviewed by Dr. A. Okeowo, agronomist"
+  },
+  {
+    "id": "agri-002",
+    "region": "Nigeria",
+    "dialect": "Pidgin English",
+    "crop": "tomato",
+    "question": "Good evening sir. My tomato leaf get black spot for underside and the fruit dey rot before e ripe. Wetin I fit do?",
+    "answer": "You are dealing with late blight (Phytophthora infestans) — the black spots under leaves and fruit rot before ripening are the giveaway. This disease spreads fast in humid weather. What to do immediately: (1) Remove all affected leaves and any rotting fruit and bury them far from the field. Do not compost them. (2) Improve air flow — if your tomato rows are tight, thin them. (3) Apply a copper-based fungicide (like copper oxychloride) at the recommended rate on the label. Spray in the evening when bees are gone. (4) Next season, plant resistant varieties like 'Roma VF' or 'Tropimech'. Do not save seed from infected plants.",
+    "source": "FAO Tomato Disease Management Manual; cross-checked with IITA vegetable guide"
+  },
+  {
+    "id": "agri-003",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "maize",
+    "question": "Assalamu alaikum. Masara na ta fara bushewa daga sama zuwa kasa, kuma idan na cire ganyenta sai na ga holes. Wane irin cuta ne wannan?",
+    "answer": "Wa alaikum assalam. What you are describing — drying from the top down with holes in the leaves — sounds like maize stem borer (Busseola fusca) damage. The holes are where the larvae entered, and the top-down drying happens because the borers tunnel inside the stem and block water flow. What to do now: (1) Pull out and burn heavily affected plants (the ones already drying) — the borers are inside the stem. (2) For the remaining crop, apply neem powder (50g into the whorl of each plant) or ash mixed with fine sand. (3) After harvest, destroy ALL stubble and crop residue — the borers overwinter inside the stems. Next season: plant early, and intercrop maize with Desmodium (a push-pull companion crop that repels stem borers).",
+    "source": "IITA Stem Borer Management Guide; Push-Pull technology (icipe, Kenya)"
+  },
+  {
+    "id": "agri-004",
+    "region": "Kenya",
+    "dialect": "Swahili",
+    "crop": "maize",
+    "question": "Habari. Mahindi yangu yana majani ya njano na mistari ya kijani kibichi katikati. Nilitia mbolea lakini haisaidii. Nifanye nini?",
+    "answer": "Habari. The yellow leaves with green stripes along the veins (interveinal chlorosis) is a textbook sign of nitrogen deficiency — or more precisely, that your soil cannot release the nitrogen you applied. Adding more fertilizer will not help if the soil is too acidic. Do this: (1) Collect soil from 5 spots in your field, mix them, and take a cupful to the nearest KALRO or county extension office for a pH test. (2) If the soil is below pH 5.5 (common in western Kenya), apply agricultural lime at 2 tons per hectare before the next rainy season. (3) For THIS season, apply well-composted manure around each plant (about one gorogoro per 5 plants) and water it in. Compost releases nitrogen slowly and buffers soil pH. (4) Next season, plant a legume (beans or cowpeas) in rotation — they fix nitrogen naturally.",
+    "source": "KALRO Soil Health Guide; FAO Soil Fertility Manual for Smallholders"
+  },
+  {
+    "id": "agri-005",
+    "region": "India",
+    "dialect": "Hindi",
+    "crop": "rice",
+    "question": "Namaste ji. Mere dhan ke patte pile ho rahe hain aur plants chhote reh gaye hain. Beech ki naaliyon mein paani khada hai. Kya karen?",
+    "answer": "Namaste. The yellowing leaves (starting from the tips) plus stunted growth with standing water in the furrows indicates iron deficiency caused by waterlogging — the roots cannot breathe, so they cannot take up nutrients. Do the following: (1) Drain the standing water immediately. Rice does not need continuous flooding — alternate wetting and drying (AWD) is healthier. (2) Once the soil surface cracks slightly, apply ferrous sulphate at 50 kg per hectare mixed with an equal amount of well-decomposed FYM (farmyard manure). (3) After 7 days, if new leaves are still yellow, spray 0.5% ferrous sulphate solution on the leaves in the evening. (4) Next season, level your field before transplanting — uneven fields cause waterlogging in low spots. This is NOT a disease, so do not spray fungicides.",
+    "source": "ICAR Rice Production Manual; IRRI Nutrient Management Guide"
+  },
+  {
+    "id": "agri-006",
+    "region": "Ghana",
+    "dialect": "Pidgin English",
+    "crop": "cowpea",
+    "question": "Please help me o. My cowpea flowers dey plenty but pod no dey form. All the flowers just dey drop. I don spray insecticide but nothing change.",
+    "answer": "Flower drop without pod formation in cowpea is almost always a pollination problem, not a pest problem — so insecticide will not help and may have made it worse by killing the bees. Cowpea flowers are self-pollinating but need insect movement (bees, thrips) to trigger pod set. What to do: (1) Stop spraying insecticide immediately — give the bee population 7-10 days to recover. (2) Intercrop with flowering plants like sunn hemp or basil near your cowpea — they attract pollinators. (3) If you must spray for pests, use neem oil only, and spray at dusk when bees are not active. (4) Check your fertilizer — too much nitrogen (NPK 15-15-15) encourages leaves at the expense of pods. Cowpea fixes its own nitrogen. If you added fertilizer, skip it next season. (5) Ensure the crop is not water-stressed during flowering — irrigate lightly if no rain for 5+ days during bloom.",
+    "source": "IITA Cowpea Production Guide; CSIR-CRI Ghana extension bulletin"
+  },
+  {
+    "id": "agri-007",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cassava",
+    "question": "Ndewo. Akpu m na-acha odo odo na akwukwo ya na-ada. O bu oria?",
+    "answer": "Ndewo. Cassava leaves turning yellow and dropping is most likely cassava mosaic disease (CMD) — caused by a virus spread by whiteflies. Key signs to confirm: are the leaves also distorted (twisted, smaller than normal) or showing a mosaic pattern of yellow and green patches? If yes, you have CMD. What to do: (1) Uproot and burn every affected plant immediately — the virus spreads fast through whiteflies and the infected plants cannot be cured. Do NOT use the stems from infected plants for next season's planting. (2) For the healthy plants, mulch heavily around the base to keep the soil cool and moist — stressed plants attract more whiteflies. (3) Next season, plant ONLY certified CMD-resistant varieties (ask your extension officer for TME 419 or TMS 98/0505). These varieties carry natural resistance. If you cannot get improved varieties, carefully select stems ONLY from symptom-free plants in THIS season's field.",
+    "source": "IITA Cassava Mosaic Disease Management Guide; National Root Crops Research Institute (NRCRI), Umudike"
+  },
+  {
+    "id": "agri-008",
+    "region": "Kenya",
+    "dialect": "English",
+    "crop": "mango",
+    "question": "My mango fruits have black sunken spots that crack open. Some fruits are dropping before they ripen. This started after the long rains. What disease is this and how do I control it?",
+    "answer": "You are describing anthracnose (Colletotrichum gloeosporioides) — black sunken spots that crack open, fruit drop, and onset after rain are the classic signs. This is the most important mango disease in Kenya. Control strategy: (1) Remove and bury all fallen fruit and any mummified fruit still on the tree — they are the source of spores for the next rain. (2) Prune the tree to open the canopy — better airflow dries the leaves faster and reduces infection. (3) For the remaining fruit, apply a copper-based fungicide (copper hydroxide at 50g per 20 litres of water) immediately, and repeat every 14 days during the rainy season. Stop spraying 21 days before harvest. (4) Next season: spray BEFORE the rains start, especially at flowering and fruit set. (5) Post-harvest: dip harvested fruit in hot water (55°C for 5 minutes) to kill surface spores before storage. This is safe and chemical-free.",
+    "source": "KALRO Mango Production Manual; FAO Anthracnose Management Guide"
+  },
+  {
+    "id": "agri-009",
+    "region": "India",
+    "dialect": "Hindi",
+    "crop": "tomato",
+    "question": "Bhaiya, tamatar ke patte niche se upar tak sukhte ja rahe hain, aur patte murud kar gol ho rahe hain. Phal bhi chhote aur kadve hain. Kya bimari hai?",
+    "answer": "You are describing tomato leaf curl virus (ToLCV), a disease spread by whiteflies. The key signs match: leaves curling upward (murud kar), drying from bottom up, and small bitter fruit. This is a virus — there is NO cure for infected plants, and spraying insecticides on the sick plants is a waste of money. What you must do: (1) Uproot all affected plants, bag them, and burn them or bury them deep — do NOT leave them in the field. (2) For the healthy plants, apply neem oil spray (5ml/liter) every 7 days to repel whiteflies from spreading the virus further. (3) Remove ALL weeds around the field — many weeds host whiteflies. (4) Next season: use ToLCV-resistant varieties like 'Arka Rakshak', 'Arka Samrat', or 'Pusa Hybrid 8'. Start neem oil sprays from the nursery stage. (5) Use yellow sticky traps (15 per acre) to catch whiteflies early. This is a management problem, not a spray problem.",
+    "source": "ICAR-IIHR Tomato Disease Guide; Indian Institute of Horticultural Research, Bangalore"
+  },
+  {
+    "id": "agri-010",
+    "region": "Nigeria",
+    "dialect": "Pidgin English",
+    "crop": "maize",
+    "question": "I beg o. My maize wey I plant for the new land, e no grow well. Leaf yellow, plant short short, and the cob wey come out tiny with only few seed inside. I use NPK fertilizer plenty but still the same. Abeg wetin be the problem?",
+    "answer": "What you are describing — yellow leaves, stunted growth, and poorly filled cobs despite applying NPK — strongly suggests your soil is acidic (low pH), which locks up the fertilizer nutrients so the plant cannot access them. This is very common on newly cleared land in southern Nigeria. The NPK you applied is sitting in the soil unused because acid soil ties it up. What to do: (1) Take a soil sample to your nearest ADP (Agricultural Development Programme) office for a free or low-cost pH test. (2) If the pH is below 5.5, you need agricultural lime before anything else — about 2 tonnes per hectare worked into the soil 2-3 weeks before planting. Lime is cheap and one application lasts 3-4 seasons. (3) For the current crop, apply well-rotted poultry manure (not fresh) around each plant — about one handful per plant. Poultry manure helps buffer soil acidity and releases nutrients slowly. (4) Next season: lime first, then apply NPK at half the rate you used this year. With corrected pH, half the fertilizer will give you double the yield. (5) Plant a legume (cowpea, groundnut) as the next crop — they improve the soil. Do NOT clear new land and immediately plant maize without testing pH first.",
+    "source": "IITA Soil Fertility Manual; Oyo State ADP Extension Guide; FAO Soil Acidity Management"
+  }
+]

@@ -1,0 +1,45 @@
+name: Validate QA Dataset
+
+on:
+  pull_request:
+    paths:
+      - 'data/agri_qa.json'
+      - 'data/qa_template.json'
+      - 'src/validate.py'
+  push:
+    branches: [main]
+    paths:
+      - 'data/agri_qa.json'
+      - 'data/qa_template.json'
+      - 'src/validate.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate dataset
+        run: python src/validate.py data/agri_qa.json --strict
+
+      - name: Check JSON is well-formed
+        run: python -c "import json; json.load(open('data/agri_qa.json')); print('JSON is valid')"
+
+      - name: Print dataset summary
+        run: |
+          python -c "
+          import json
+          data = json.load(open('data/agri_qa.json'))
+          dialects = set(e['dialect'] for e in data)
+          crops = set(e['crop'] for e in data)
+          regions = set(e['region'] for e in data)
+          print(f'Total entries: {len(data)}')
+          print(f'Dialects: {sorted(dialects)}')
+          print(f'Crops: {sorted(crops)}')
+          print(f'Regions: {sorted(regions)}')
+          "

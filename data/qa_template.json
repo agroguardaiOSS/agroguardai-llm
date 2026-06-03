@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/agroguardaiaOS/agroguardai-llm/main/data/qa_schema.json",
+  "description": "QA pair template for AgroguardAI-LLM dataset. Copy this block, fill in your data, and append to data/agri_qa.json. See data/CONTRIBUTING.md for the full guide.",
+  "template": {
+    "id": "agri-NNN",
+    "region": "Country or growing zone (e.g. Nigeria, Kenya, India)",
+    "dialect": "Language or dialect of the question (e.g. Yoruba, Pidgin English, Swahili, Hindi)",
+    "crop": "Lowercase crop name (e.g. cassava, maize, tomato, rice, cowpea, mango)",
+    "question": "The farmer's exact words — do not clean up grammar or code-switching",
+    "answer": "Safe, evidence-backed agronomic advice in the SAME dialect as the question. See CONTRIBUTING.md for answer rules.",
+    "source": "Reference or reviewer name (e.g. IITA Guide, Year; reviewed by Name, role)"
+  },
+  "example_good": {
+    "id": "agri-011",
+    "region": "Nigeria",
+    "dialect": "Pidgin English",
+    "crop": "cassava",
+    "question": "My cassava root dey soft and e get bad smell when I harvest. The leaf still green o, but inside the root don spoil. Wetin cause am?",
+    "answer": "Wetin you dey describe na cassava root rot, and e get two kind wey common: (1) Soft rot wey bacteria dey cause — this one dey happen when water stand for the field too long, or when you harvest and the root stay for wet ground. The smell na sign say bacteria don enter. (2) Root rot wey fungi dey cause — this one dey show brown dry patches inside the root before the soft stage. Wetin to do: First thing, harvest every mature cassava NOW — the longer they stay, the more go spoil. Dig drainage channels around your field to carry water comot. For the cassava wey remain, apply Trichoderma powder (biological fungicide) to the soil around the stem base — this fungus dey fight the rot fungus for ground. Next season: plant on ridges (not flat ground), use TME 419 variety (e resistant to root rot), and rotate to a legume like cowpea for at least one season before you plant cassava for that same land again. No chop or sell the rotten roots — bury them far from the field.",
+    "source": "IITA Cassava Root Rot Management Guide; NRCRI Umudike extension bulletin; reviewed by cassava pathologist"
+  },
+  "example_refusal": {
+    "id": "agri-012",
+    "region": "Kenya",
+    "dialect": "Swahili",
+    "crop": "maize",
+    "question": "Mahindi yangu hayakua vizuri na majani yana rangi ya zambarau. Nilitumia mbolea ya DAP lakini haikusaidia. Kuna mtu alisema ni ugonjwa wa virusi, mwingine akasema ni upungufu wa virutubisho. Nifanye nini?",
+    "answer": "Shikamoo. Rangi ya zambarau kwenye majani ya mahindi inaweza kuwa na sababu nyingi — inaweza kuwa upungufu wa fosforasi, au ugonjwa wa virusi, au hata uharibifu wa mizizi kutoka kwa wadudu wa ardhini. Mimea inayoonyesha dalili za aina moja inaweza kuwa na matatizo tofauti kabisa. Kwa sababu hii, siwezi kukupa utambuzi sahihi kutoka kwa maelezo pekee. Hiki ndicho unachopaswa kufanya: Chukua mimea michache yenye dalili (pamoja na mizizi) na upeleke katika ofisi ya karibu ya kilimo ya kaunti (county extension office) au KALRO. Waambie historia yote — tarehe ya kupanda, mbolea uliyotumia, na mwelekeo wa dalili. Watachunguza na kukupa ushauri sahihi. Usitumie dawa yoyote kabla ya kupata utambuzi sahihi — inaweza kuwa upotevu wa pesa na inaweza kuharibu mazingira.",
+    "source": "KALRO Maize Diagnostics Protocol; FAO Guide to Nutrient Deficiency Identification"
+  }
+}

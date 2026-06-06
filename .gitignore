@@ -10,6 +10,7 @@ venv/
 # Models & adapters (large binaries)
 models/*
 !models/.gitkeep
+!models/clm-checkpoint/
 
 # Processed datasets
 data/processed/*
@@ -30,6 +31,7 @@ wandb/
 *.pt
 *.bin
 *.safetensors
+!models/clm-checkpoint/adapter_model.safetensors
 
 # IDE
 .idea/

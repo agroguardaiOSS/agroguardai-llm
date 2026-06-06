@@ -3,205 +3,152 @@ base_model: gpt2
 library_name: peft
 pipeline_tag: text-generation
 tags:
-- base_model:adapter:gpt2
+- agriculture
+- farming
+- smallholder-farmers
 - lora
+- peft
 - transformers
+- nigerian-languages
+- multilingual
+- continued-pretraining
+- crop-advisory
+license: cc-by-4.0
+datasets:
+- AgroguardAI/agri-qa
+language:
+- yo
+- ha
+- ig
+- pcm
+- sw
+- ki
+- luo
+- am
+- hi
+- pa
+- ta
+- en
 ---
 
-# Model Card for Model ID
+# AgroguardAI CLM Agricultural GPT-2 (LoRA)
 
-<!-- Provide a quick summary of what the model is/does. -->
+A proof-of-concept continued pre-training (CLM) of **GPT-2 (124M)** on the
+[AgroguardAI Agri-QA dataset](https://huggingface.co/datasets/AgroguardAI/agri-qa)
+using **LoRA adapters**. This model adapts base GPT-2 to the agricultural domain
+across 12 dialects of Sub-Saharan Africa and South Asia.
 
-
+> **This is a research prototype, NOT for production.** It was trained on CPU
+> as a smoke test. The production target is Llama 3 8B with QLoRA on GPU.
 
 ## Model Details
 
-### Model Description
+- **Base model**: gpt2 (124M parameters, 12 layers, 768 hidden dim)
+- **Adapter**: LoRA — rank=4, alpha=8, dropout=0.1
+- **Trainable parameters**: 405,504 (0.33% of base model)
+- **Training data**: 100 QA pairs from Agri-QA (80 train / 20 validation)
+- **Training regime**: fp32, CPU, 50 steps, batch size 2, context window 1024 tokens
+- **Training time**: ~30 seconds on CPU (proof-of-concept)
 
-<!-- Provide a longer summary of what this model is. -->
+## Results
 
+| Metric            | Value  |
+|-------------------|--------|
+| Final eval loss   | 4.64   |
+| Perplexity        | 103.5  |
 
+These numbers are from a minimal smoke test (50 steps on 80 training samples).
+They are NOT indicative of what a properly-trained model can achieve. The
+production pipeline targets < 10 perplexity on agricultural text.
 
-- **Developed by:** [More Information Needed]
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
-- **Model type:** [More Information Needed]
-- **Language(s) (NLP):** [More Information Needed]
-- **License:** [More Information Needed]
-- **Finetuned from model [optional]:** [More Information Needed]
+## How to Use
 
-### Model Sources [optional]
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from peft import PeftModel
 
-<!-- Provide the basic links for the model. -->
+# Load base model
+base_model = AutoModelForCausalLM.from_pretrained("gpt2")
 
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
+# Load LoRA adapter
+model = PeftModel.from_pretrained(base_model, "AgroguardAI/clm-agricultural-gpt2-lora")
+tokenizer = AutoTokenizer.from_pretrained("AgroguardAI/clm-agricultural-gpt2-lora")
 
-## Uses
+# Generate agricultural text
+prompt = "A farmer in Nigeria asks about cassava mosaic disease:"
+inputs = tokenizer(prompt, return_tensors="pt")
+outputs = model.generate(**inputs, max_new_tokens=100, do_sample=True, temperature=0.7)
+print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+```
 
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+## Training Data
 
-### Direct Use
+The model is trained on a 100-sample subset of the
+[AgroguardAI Agri-QA dataset](https://huggingface.co/datasets/AgroguardAI/agri-qa)
+— a curated, expert-annotated agricultural Q&A dataset covering 25 crops and
+12 dialects across Nigeria, Kenya, India, Ethiopia, Tanzania, Ghana, Rwanda,
+Malawi, and Uganda.
 
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
+## Intended Uses
 
-[More Information Needed]
+- **Domain adaptation research**: demonstrating how LoRA can cheaply adapt
+  general-purpose LLMs to specialized agricultural domains
+- **Baseline for future experiments**: establishing a bottom-line metric before
+  scaling to larger models (Llama 3 8B, Mistral 7B)
+- **Multilingual agricultural NLP**: evaluating how well base models handle
+  low-resource languages (Yoruba, Hausa, Igbo, Kikuyu, Amharic, Luo, etc.)
 
-### Downstream Use [optional]
+## Out-of-Scope Uses
 
-<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
+- **Production crop advisory** — DO NOT give real farming advice with this model.
+  It is a prototype trained on 80 samples for 50 steps.
+- **Safety-critical decisions** — the model may hallucinate or produce unsafe
+  recommendations.
 
-[More Information Needed]
+## Limitations
 
-### Out-of-Scope Use
-
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-[More Information Needed]
-
-## Bias, Risks, and Limitations
-
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-[More Information Needed]
-
-### Recommendations
-
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
-
-## How to Get Started with the Model
-
-Use the code below to get started with the model.
-
-[More Information Needed]
-
-## Training Details
-
-### Training Data
-
-<!-- This should link to a Dataset Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
-
-[More Information Needed]
-
-### Training Procedure
-
-<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
-
-#### Preprocessing [optional]
-
-[More Information Needed]
-
-
-#### Training Hyperparameters
-
-- **Training regime:** [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision -->
-
-#### Speeds, Sizes, Times [optional]
-
-<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-[More Information Needed]
-
-## Evaluation
-
-<!-- This section describes the evaluation protocols and provides the results. -->
-
-### Testing Data, Factors & Metrics
-
-#### Testing Data
-
-<!-- This should link to a Dataset Card if possible. -->
-
-[More Information Needed]
-
-#### Factors
-
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-[More Information Needed]
-
-#### Metrics
-
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-[More Information Needed]
-
-### Results
-
-[More Information Needed]
-
-#### Summary
-
-
-
-## Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
-[More Information Needed]
+- **Tiny training run**: 50 steps, 80 samples — severe underfitting
+- **CPU-only**: no mixed precision, no gradient accumulation, no LR scheduling
+- **GPT-2 base**: a 2019 model with no instruction-following capability
+- **High perplexity (103.5)**: the model is better than random but far from
+  producing coherent agronomic advice
+- **English-only tokenizer**: non-English text (Yoruba, Hausa, etc.) is
+  poorly tokenized, increasing effective sequence length
 
 ## Environmental Impact
 
-<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
+Negligible — the smoke test ran for ~30 seconds on a single CPU core.
+Estimated < 0.001 kWh.
 
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
+## Training Script
 
-- **Hardware Type:** [More Information Needed]
-- **Hours used:** [More Information Needed]
-- **Cloud Provider:** [More Information Needed]
-- **Compute Region:** [More Information Needed]
-- **Carbon Emitted:** [More Information Needed]
+```bash
+# Reproduce the training run:
+python scripts/clm_pretrain.py \
+  --data data/agri_qa.json \
+  --output models/clm-checkpoint \
+  --base-model gpt2 \
+  --lora-rank 4 \
+  --lora-alpha 8 \
+  --batch-size 2 \
+  --max-steps 50 \
+  --val-samples 20 \
+  --max-length 1024
+```
 
-## Technical Specifications [optional]
+Full source: https://github.com/agroguardaiOSS/agroguardai-llm
 
-### Model Architecture and Objective
+## Citation
 
-[More Information Needed]
+```bibtex
+@misc{agroguardai_clm_gpt2_lora_2025,
+  title  = {AgroguardAI CLM Agricultural GPT-2 (LoRA)},
+  author = {AgroguardAI},
+  year   = {2025},
+  url    = {https://huggingface.co/AgroguardAI/clm-agricultural-gpt2-lora}
+}
+```
 
-### Compute Infrastructure
+## Model Card Authors
 
-[More Information Needed]
-
-#### Hardware
-
-[More Information Needed]
-
-#### Software
-
-[More Information Needed]
-
-## Citation [optional]
-
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
-
-**BibTeX:**
-
-[More Information Needed]
-
-**APA:**
-
-[More Information Needed]
-
-## Glossary [optional]
-
-<!-- If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-[More Information Needed]
-
-## More Information [optional]
-
-[More Information Needed]
-
-## Model Card Authors [optional]
-
-[More Information Needed]
-
-## Model Card Contact
-
-[More Information Needed]
-### Framework versions
-
-- PEFT 0.19.1
+AgroguardAI Ecosystem — agroguardai1@gmail.com

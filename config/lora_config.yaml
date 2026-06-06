@@ -4,7 +4,7 @@
 
 model:
   # Base model ID from Hugging Face Hub
-  base_model: "mistralai/Mistral-7B-Instruct-v0.3"
+  base_model: "meta-llama/Meta-Llama-3-8B-Instruct"
 
   # Alternative: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
   # base_model: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"

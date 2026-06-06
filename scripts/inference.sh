@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-BASE_MODEL="${AGROGUARD_BASE_MODEL:-mistralai/Mistral-7B-Instruct-v0.3}"
+BASE_MODEL="${AGROGUARD_BASE_MODEL:-meta-llama/Meta-Llama-3-8B-Instruct}"
 ADAPTER="${AGROGUARD_ADAPTER:-models/agroguardai-lora-adapter}"
 
 python src/inference.py --base "$BASE_MODEL" --adapter "$ADAPTER" "$@"

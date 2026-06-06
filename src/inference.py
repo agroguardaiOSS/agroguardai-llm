@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DEFAULT_BASE_MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
+DEFAULT_BASE_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
 DEFAULT_ADAPTER = "models/agroguardai-lora-adapter"
 
 SYSTEM_PROMPT = (

@@ -275,7 +275,7 @@ def main():
     parser.add_argument("--models", default=",".join(DEFAULT_MODELS), help="Comma-separated model keys")
     parser.add_argument("--output", default="", help="Directory to save results JSON/CSV")
     parser.add_argument("--adapter", default="models/agroguardai-lora-adapter", help="LoRA adapter path")
-    parser.add_argument("--base", default="mistralai/Mistral-7B-Instruct-v0.3", help="Base model for agroguardai")
+    parser.add_argument("--base", default="meta-llama/Meta-Llama-3-8B-Instruct", help="Base model for agroguardai")
     parser.add_argument("--verbose", action="store_true", help="Print per-sample scores")
     args = parser.parse_args()
 

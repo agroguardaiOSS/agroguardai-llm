@@ -1,25 +1,32 @@
 #!/usr/bin/env python3
 """
-Production-grade QLoRA fine-tuning of Llama 3 8B on the AgroguardAI Agri-QA dataset.
+Production-grade QLoRA fine-tuning on the AgroguardAI Agri-QA dataset.
 
-Designed for single-GPU (24 GB VRAM) or multi-GPU (DDP) setups.
+Supports two model families via ``--model-family``:
+  - ``llama3-8b``  → meta-llama/Meta-Llama-3-8B  (A100/A10G, 24+ GB VRAM)
+  - ``llama3-3b``  → meta-llama/Llama-3.2-3B-Instruct  (T4, 16 GB VRAM)
+
 Uses 4-bit NF4 quantization, PEFT/LoRA, gradient checkpointing, and
-flash-attention-2 for memory efficiency.
+flash-attention-2 for memory efficiency on Ampere+ GPUs.
 
-Expected training time: ~30-45 min on 1x A100-40GB, ~1.5-2h on 1x A10G-24GB.
-
-Usage:
+Quick start (T4):
     python scripts/finetune_llama3.py \
-      --model-name meta-llama/Meta-Llama-3-8B \
+      --model-family llama3-3b \
       --dataset AgroguardAI/agri-qa \
-      --output ./models/llama3-agricultural-qlora \
-      --batch-size 4 \
-      --gradient-accumulation-steps 8 \
-      --epochs 3
+      --output ./models/llama3-agricultural-qlora
+
+Quick start (A100):
+    python scripts/finetune_llama3.py \
+      --model-family llama3-8b \
+      --dataset AgroguardAI/agri-qa \
+      --output ./models/llama3-agricultural-qlora
+
+Any CLI argument can override the family preset (e.g. ``--lora-r 64 --epochs 10``).
+The ``--model-name`` flag is still supported for custom base models.
 
 Requirements:
     pip install transformers accelerate peft bitsandbytes trl datasets
-    pip install flash-attn --no-build-isolation  # Recommended but optional
+    pip install flash-attn --no-build-isolation  # Recommended for Ampere+ GPUs
 
 Environment:
     HF_TOKEN must be set for gated model access (Llama 3 requires auth).
@@ -70,13 +77,43 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
+# ── Model family presets ───────────────────────────────────────────────────
+MODEL_PRESETS = {
+    "llama3-8b": {
+        "model_name": "meta-llama/Meta-Llama-3-8B",
+        "lora_r": 16,
+        "lora_alpha": 32,
+        "per_device_train_batch_size": 4,
+        "gradient_accumulation_steps": 8,
+        "num_epochs": 3,
+        "learning_rate": 2e-4,
+        "use_flash_attention": True,
+        "max_seq_length": 2048,
+        "description": "24+ GB VRAM (A100, A10G). LoRA rank 16, batch 4×8=32.",
+    },
+    "llama3-3b": {
+        "model_name": "meta-llama/Llama-3.2-3B-Instruct",
+        "lora_r": 32,
+        "lora_alpha": 64,
+        "per_device_train_batch_size": 8,
+        "gradient_accumulation_steps": 4,
+        "num_epochs": 5,
+        "learning_rate": 2e-4,
+        "use_flash_attention": False,  # T4 lacks Ampere+ flash-attn support
+        "max_seq_length": 2048,
+        "description": "16 GB VRAM (T4). Higher rank (32), more epochs (5), batch 8×4=32.",
+    },
+}
+
+
 # ── Configuration ──────────────────────────────────────────────────────────
 @dataclass
 class FinetuneConfig:
     """All config in one place — argparse populates this."""
 
-    # Model
-    model_name: str = "meta-llama/Meta-Llama-3-8B"
+    # Model  (defaults here are fallback; MODEL_PRESETS applied first)
+    model_family: str = "llama3-8b"
+    model_name: str = ""  # filled from preset
     use_flash_attention: bool = True
     attn_implementation: str = "flash_attention_2"  # auto-set from use_flash_attention
 
@@ -271,26 +308,30 @@ class PerplexityCallback(TrainerCallback):
 # ── Main ───────────────────────────────────────────────────────────────────
 def parse_args() -> FinetuneConfig:
     parser = argparse.ArgumentParser(
-        description="QLoRA fine-tune Llama 3 8B on AgroguardAI Agri-QA"
+        description="QLoRA fine-tune Llama 3 on AgroguardAI Agri-QA"
     )
-    # Model
-    parser.add_argument("--model-name", default="meta-llama/Meta-Llama-3-8B")
+    # Model family  (auto-sets model, LoRA rank, batch size, epochs, …)
+    parser.add_argument("--model-family", default="llama3-8b",
+                        choices=["llama3-8b", "llama3-3b"],
+                        help="Preset: llama3-8b (A100) or llama3-3b (T4)")
+    parser.add_argument("--model-name", default=None,
+                        help="Override base model (e.g. meta-llama/Llama-3.1-8B)")
     parser.add_argument("--no-flash-attention", action="store_true",
                         help="Disable flash-attention-2 (fallback to sdpa)")
     # LoRA
-    parser.add_argument("--lora-r", type=int, default=16)
-    parser.add_argument("--lora-alpha", type=int, default=32)
+    parser.add_argument("--lora-r", type=int, default=None)
+    parser.add_argument("--lora-alpha", type=int, default=None)
     parser.add_argument("--lora-dropout", type=float, default=0.05)
     # Data
     parser.add_argument("--dataset", default="AgroguardAI/agri-qa")
-    parser.add_argument("--max-seq-length", type=int, default=2048)
+    parser.add_argument("--max-seq-length", type=int, default=None)
     parser.add_argument("--val-split", type=float, default=0.10)
     # Training
     parser.add_argument("--output", required=True, help="Output directory")
-    parser.add_argument("--epochs", type=int, default=3)
-    parser.add_argument("--batch-size", type=int, default=4)
-    parser.add_argument("--gradient-accumulation-steps", type=int, default=8)
-    parser.add_argument("--lr", type=float, default=2e-4)
+    parser.add_argument("--epochs", type=int, default=None)
+    parser.add_argument("--batch-size", type=int, default=None)
+    parser.add_argument("--gradient-accumulation-steps", type=int, default=None)
+    parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--warmup-ratio", type=float, default=0.03)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--save-steps", type=int, default=100)
@@ -306,22 +347,36 @@ def parse_args() -> FinetuneConfig:
 
     args = parser.parse_args()
 
+    # ── Apply model-family preset, then CLI overrides ──────────────────────
+    preset = MODEL_PRESETS[args.model_family]
     cfg = FinetuneConfig()
-    cfg.model_name = args.model_name
-    cfg.use_flash_attention = not args.no_flash_attention
+    cfg.model_family = args.model_family
+    cfg.model_name = args.model_name or preset["model_name"]
+    cfg.lora_r = args.lora_r if args.lora_r is not None else preset["lora_r"]
+    cfg.lora_alpha = args.lora_alpha if args.lora_alpha is not None else preset["lora_alpha"]
+    cfg.per_device_train_batch_size = (
+        args.batch_size if args.batch_size is not None else preset["per_device_train_batch_size"]
+    )
+    cfg.per_device_eval_batch_size = cfg.per_device_train_batch_size
+    cfg.gradient_accumulation_steps = (
+        args.gradient_accumulation_steps if args.gradient_accumulation_steps is not None
+        else preset["gradient_accumulation_steps"]
+    )
+    cfg.num_epochs = args.epochs if args.epochs is not None else preset["num_epochs"]
+    cfg.learning_rate = args.lr if args.lr is not None else preset["learning_rate"]
+    cfg.max_seq_length = (
+        args.max_seq_length if args.max_seq_length is not None else preset["max_seq_length"]
+    )
+    # Flash attention: preset sets default; --no-flash-attention overrides
+    cfg.use_flash_attention = preset["use_flash_attention"]
+    if args.no_flash_attention:
+        cfg.use_flash_attention = False
     cfg.attn_implementation = "flash_attention_2" if cfg.use_flash_attention else "sdpa"
-    cfg.lora_r = args.lora_r
-    cfg.lora_alpha = args.lora_alpha
+    # Remaining fields (no preset)
     cfg.lora_dropout = args.lora_dropout
     cfg.dataset_name = args.dataset
-    cfg.max_seq_length = args.max_seq_length
     cfg.val_split_ratio = args.val_split
     cfg.output_dir = args.output
-    cfg.num_epochs = args.epochs
-    cfg.per_device_train_batch_size = args.batch_size
-    cfg.per_device_eval_batch_size = args.batch_size
-    cfg.gradient_accumulation_steps = args.gradient_accumulation_steps
-    cfg.learning_rate = args.lr
     cfg.warmup_ratio = args.warmup_ratio
     cfg.seed = args.seed
     cfg.save_steps = args.save_steps
@@ -341,7 +396,7 @@ def main():
     set_seed(config.seed)
 
     log.info("=" * 60)
-    log.info("AgroguardAI Llama 3 8B QLoRA Fine-Tuning")
+    log.info(f"AgroguardAI Llama 3 QLoRA Fine-Tuning  [{config.model_family}]")
     log.info(f"Model: {config.model_name}")
     log.info(f"Dataset: {config.dataset_name}")
     log.info(f"LoRA: r={config.lora_r}, alpha={config.lora_alpha}")
@@ -445,6 +500,7 @@ def main():
             "eval_perplexity": eval_results.get("eval_perplexity"),
             "total_steps": trainer.state.global_step,
             "config": {
+                "model_family": config.model_family,
                 "model_name": config.model_name,
                 "lora_r": config.lora_r,
                 "lora_alpha": config.lora_alpha,

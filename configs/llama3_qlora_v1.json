@@ -1,25 +1,23 @@
 {
-  "training": {
-    "model_name": "meta-llama/Meta-Llama-3-8B",
+  "active_preset": "llama3-3b",
+  "description": "Dual-preset QLoRA config. Switch active_preset between llama3-8b (A100/A10G) and llama3-3b (T4). The training script reads --model-family from CLI; this file acts as documentation and a quick-launch reference.",
+  "common": {
     "dataset": "AgroguardAI/agri-qa",
     "output_dir": "./models/llama3-agricultural-qlora",
-    "num_epochs": 3,
-    "per_device_train_batch_size": 4,
-    "per_device_eval_batch_size": 4,
-    "gradient_accumulation_steps": 8,
-    "learning_rate": 2e-4,
+    "val_split_ratio": 0.10,
+    "max_seq_length": 2048,
     "weight_decay": 0.01,
     "warmup_ratio": 0.03,
     "lr_scheduler_type": "cosine",
+    "optim": "paged_adamw_8bit",
+    "bf16": true,
+    "gradient_checkpointing": true,
     "logging_steps": 10,
     "save_steps": 100,
     "eval_steps": 100,
     "seed": 42,
-    "max_seq_length": 2048,
-    "val_split_ratio": 0.10,
-    "bf16": true,
-    "gradient_checkpointing": true,
-    "optim": "paged_adamw_8bit"
+    "report_to": "wandb",
+    "save_merged": false
   },
   "quantization": {
     "load_in_4bit": true,
@@ -27,17 +25,39 @@
     "bnb_4bit_quant_type": "nf4",
     "bnb_4bit_use_double_quant": true
   },
-  "lora": {
-    "r": 16,
-    "alpha": 32,
-    "dropout": 0.05,
-    "target_modules": [
-      "q_proj", "k_proj", "v_proj", "o_proj",
-      "gate_proj", "up_proj", "down_proj"
-    ]
+  "lora_target_modules": [
+    "q_proj", "k_proj", "v_proj", "o_proj",
+    "gate_proj", "up_proj", "down_proj"
+  ],
+  "presets": {
+    "llama3-8b": {
+      "model_name": "meta-llama/Meta-Llama-3-8B",
+      "description": "24+ GB VRAM required (A100, A10G). Flash-attn-2 enabled. ~30–45 min on A100.",
+      "num_epochs": 3,
+      "per_device_train_batch_size": 4,
+      "gradient_accumulation_steps": 8,
+      "effective_batch_size": 32,
+      "learning_rate": 2e-4,
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "attn_implementation": "flash_attention_2",
+      "target_eval_perplexity": "< 15"
+    },
+    "llama3-3b": {
+      "model_name": "meta-llama/Llama-3.2-3B-Instruct",
+      "description": "16 GB VRAM (T4). Flash-attn disabled (T4 lacks Ampere+). ~4h training. Default for T4 users.",
+      "num_epochs": 5,
+      "per_device_train_batch_size": 8,
+      "gradient_accumulation_steps": 4,
+      "effective_batch_size": 32,
+      "learning_rate": 2e-4,
+      "lora_r": 32,
+      "lora_alpha": 64,
+      "lora_dropout": 0.05,
+      "attn_implementation": "sdpa",
+      "target_eval_perplexity": "< 18"
+    }
   },
-  "attn_implementation": "flash_attention_2",
-  "report_to": "wandb",
-  "save_merged": false,
-  "notes": "First production run. 500 QA pairs, 3 epochs. Target: eval perplexity < 15 on agricultural text. Increase lora_r to 32 or epochs to 5 for better results."
+  "notes": "Launch with: python scripts/finetune_llama3.py --model-family llama3-3b --output ./models/llama3-agricultural-qlora. Override any field via CLI (--lora-r 64 --epochs 10)."
 }

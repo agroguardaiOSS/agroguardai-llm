@@ -1,0 +1,33 @@
+# AgroguardAI LLM Training — Python Dependencies
+#
+# Install:
+#   uv add -r requirements-llm.txt
+#
+# Core training stack
+torch>=2.1.0
+transformers>=4.40.0
+accelerate>=0.28.0
+peft>=0.10.0
+bitsandbytes>=0.43.0
+datasets>=2.18.0
+trl>=0.8.0
+
+# Attention optimization (optional but recommended)
+# flash-attn  -- install separately: uv add flash-attn --no-build-isolation
+
+# Tokenization
+sentencepiece>=0.1.99
+tokenizers>=0.19.0
+
+# Experiment tracking
+wandb>=0.16.0
+
+# Utilities
+scipy>=1.11.0
+numpy>=1.24.0
+
+# Hugging Face Hub
+huggingface_hub>=0.22.0
+
+# Evaluation
+evaluate>=0.4.0

@@ -1,0 +1,43 @@
+{
+  "training": {
+    "model_name": "meta-llama/Meta-Llama-3-8B",
+    "dataset": "AgroguardAI/agri-qa",
+    "output_dir": "./models/llama3-agricultural-qlora",
+    "num_epochs": 3,
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 2e-4,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.03,
+    "lr_scheduler_type": "cosine",
+    "logging_steps": 10,
+    "save_steps": 100,
+    "eval_steps": 100,
+    "seed": 42,
+    "max_seq_length": 2048,
+    "val_split_ratio": 0.10,
+    "bf16": true,
+    "gradient_checkpointing": true,
+    "optim": "paged_adamw_8bit"
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "bnb_4bit_compute_dtype": "bfloat16",
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj", "k_proj", "v_proj", "o_proj",
+      "gate_proj", "up_proj", "down_proj"
+    ]
+  },
+  "attn_implementation": "flash_attention_2",
+  "report_to": "wandb",
+  "save_merged": false,
+  "notes": "First production run. 500 QA pairs, 3 epochs. Target: eval perplexity < 15 on agricultural text. Increase lora_r to 32 or epochs to 5 for better results."
+}

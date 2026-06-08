@@ -35,6 +35,7 @@ KNOWN_DIALECTS = {
     "Oromo", "Luganda", "Kinyarwanda", "Chichewa", "Bemba",
     "Spanish", "Portuguese", "Quechua", "French",
     "Twi",
+    "Fulfulde", "Kanuri", "Tiv", "Ibibio",
 }
 
 KNOWN_CROPS = {

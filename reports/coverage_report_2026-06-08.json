@@ -1,350 +1,159 @@
 {
-  "report_date": "2026-06-08 07:03 UTC",
-  "dataset": "data/agri_qa.json",
-  "total_entries": 500,
-  "target_entries": 1000,
-  "progress_pct": 50.0,
-  "growth_since_last_run": {
-    "new_entries": 0,
-    "note": "N/A (first run)"
+  "date": "2026-06-08",
+  "total_entries": 815,
+  "dialect_counts": {
+    "Yoruba": 100,
+    "Pidgin English": 100,
+    "Hausa": 100,
+    "Igbo": 100,
+    "Swahili": 56,
+    "Luo": 54,
+    "English": 45,
+    "Kikuyu": 44,
+    "Amharic": 44,
+    "Punjabi": 43,
+    "Tamil": 41,
+    "Hindi": 39,
+    "Fulfulde": 15,
+    "Kanuri": 10,
+    "Tiv": 10,
+    "Ibibio": 10,
+    "Kinyarwanda": 2,
+    "Luganda": 1,
+    "Twi": 1
   },
-  "validation": {
-    "errors": 0,
-    "warnings": 0,
-    "status": "PASSED"
+  "crop_counts": {
+    "groundnut": 41,
+    "cassava": 40,
+    "cowpea": 40,
+    "maize": 38,
+    "rice": 35,
+    "cocoa": 35,
+    "sorghum": 35,
+    "plantain": 35,
+    "tomato": 34,
+    "yam": 34,
+    "coffee": 34,
+    "mango": 32,
+    "banana": 32,
+    "cotton": 31,
+    "amaranth": 31,
+    "cabbage": 31,
+    "cashew": 31,
+    "sweet potato": 29,
+    "onion": 28,
+    "okra": 28,
+    "millet": 28,
+    "tea": 28,
+    "oil palm": 28,
+    "pepper": 27,
+    "watermelon": 26,
+    "beans": 2,
+    "sunflower": 1,
+    "dairy": 1
   },
-  "coverage_by_crop": {
-    "amaranth": 16,
-    "banana": 16,
-    "barley": 0,
-    "beans": 0,
-    "cabbage": 16,
-    "cashew": 16,
-    "cassava": 24,
-    "cocoa": 24,
-    "coconut": 0,
-    "coffee": 16,
-    "cotton": 16,
-    "cowpea": 26,
-    "groundnut": 26,
-    "irish potato": 0,
-    "maize": 25,
-    "mango": 21,
-    "millet": 16,
-    "oil palm": 16,
-    "okra": 16,
-    "onion": 16,
-    "pepper": 16,
-    "pigeon pea": 0,
-    "plantain": 28,
-    "rice": 26,
-    "sorghum": 25,
-    "soybean": 0,
-    "sugarcane": 0,
-    "sunflower": 0,
-    "sweet potato": 16,
-    "tea": 16,
-    "teff": 0,
-    "tomato": 25,
-    "watermelon": 16,
-    "wheat": 0,
-    "yam": 26
-  },
-  "coverage_by_region": {
-    "Ethiopia": 44,
-    "Ghana": 6,
+  "region_counts": {
+    "Nigeria": 448,
+    "Kenya": 141,
     "India": 123,
-    "Kenya": 118,
+    "Ethiopia": 44,
+    "Tanzania": 31,
+    "Rwanda": 9,
+    "Ghana": 8,
     "Malawi": 7,
-    "Nigeria": 167,
-    "Rwanda": 7,
-    "Tanzania": 27,
-    "Uganda": 1
+    "Uganda": 4
   },
-  "coverage_by_dialect": {
+  "unique_dialects": 19,
+  "unique_crops": 28,
+  "unique_regions": 9,
+  "dialect_coverage": {
     "Amharic": 44,
     "Bemba": 0,
     "Bengali": 0,
     "Chichewa": 0,
-    "English": 40,
+    "English": 45,
     "French": 0,
-    "Hausa": 40,
+    "Fulfulde": 15,
+    "Hausa": 100,
     "Hindi": 39,
-    "Igbo": 40,
-    "Kikuyu": 42,
-    "Kinyarwanda": 0,
-    "Luganda": 0,
-    "Luo": 42,
+    "Ibibio": 10,
+    "Igbo": 100,
+    "Kanuri": 10,
+    "Kikuyu": 44,
+    "Kinyarwanda": 2,
+    "Luganda": 1,
+    "Luo": 54,
     "Oromo": 0,
-    "Pidgin English": 42,
+    "Pidgin English": 100,
     "Portuguese": 0,
     "Punjabi": 43,
     "Quechua": 0,
     "Spanish": 0,
-    "Swahili": 45,
+    "Swahili": 56,
     "Tamil": 41,
-    "Yoruba": 42
+    "Tiv": 10,
+    "Twi": 1,
+    "Yoruba": 100
   },
-  "crop_gaps_under_10": [
-    {
-      "crop": "sunflower",
-      "count": 0
-    },
-    {
-      "crop": "wheat",
-      "count": 0
-    },
-    {
-      "crop": "irish potato",
-      "count": 0
-    },
-    {
-      "crop": "sugarcane",
-      "count": 0
-    },
-    {
-      "crop": "coconut",
-      "count": 0
-    },
-    {
-      "crop": "soybean",
-      "count": 0
-    },
-    {
-      "crop": "pigeon pea",
-      "count": 0
-    },
-    {
-      "crop": "barley",
-      "count": 0
-    },
-    {
-      "crop": "teff",
-      "count": 0
-    },
-    {
-      "crop": "beans",
-      "count": 0
-    }
+  "crop_coverage": {
+    "amaranth": 31,
+    "banana": 32,
+    "barley": 0,
+    "beans": 2,
+    "cabbage": 31,
+    "cashew": 31,
+    "cassava": 40,
+    "cocoa": 35,
+    "coconut": 0,
+    "coffee": 34,
+    "cotton": 31,
+    "cowpea": 40,
+    "dairy": 1,
+    "groundnut": 41,
+    "irish potato": 0,
+    "maize": 38,
+    "mango": 32,
+    "millet": 28,
+    "oil palm": 28,
+    "okra": 28,
+    "onion": 28,
+    "pepper": 27,
+    "pigeon pea": 0,
+    "plantain": 35,
+    "rice": 35,
+    "sorghum": 35,
+    "soybean": 0,
+    "sugarcane": 0,
+    "sunflower": 1,
+    "sweet potato": 29,
+    "tea": 28,
+    "teff": 0,
+    "tomato": 34,
+    "watermelon": 26,
+    "wheat": 0,
+    "yam": 34
+  },
+  "missing_dialects": [
+    "Bemba",
+    "Bengali",
+    "Chichewa",
+    "French",
+    "Oromo",
+    "Portuguese",
+    "Quechua",
+    "Spanish"
   ],
-  "region_gaps_under_10": [
-    {
-      "region": "Uganda",
-      "count": 1
-    },
-    {
-      "region": "Ghana",
-      "count": 6
-    },
-    {
-      "region": "Malawi",
-      "count": 7
-    },
-    {
-      "region": "Rwanda",
-      "count": 7
-    }
+  "missing_crops": [
+    "barley",
+    "coconut",
+    "irish potato",
+    "pigeon pea",
+    "soybean",
+    "sugarcane",
+    "teff",
+    "wheat"
   ],
-  "dialect_gaps_under_10": [
-    {
-      "dialect": "Luganda",
-      "count": 0
-    },
-    {
-      "dialect": "Kinyarwanda",
-      "count": 0
-    },
-    {
-      "dialect": "Bemba",
-      "count": 0
-    },
-    {
-      "dialect": "Bengali",
-      "count": 0
-    },
-    {
-      "dialect": "Oromo",
-      "count": 0
-    },
-    {
-      "dialect": "Quechua",
-      "count": 0
-    },
-    {
-      "dialect": "Spanish",
-      "count": 0
-    },
-    {
-      "dialect": "Portuguese",
-      "count": 0
-    },
-    {
-      "dialect": "French",
-      "count": 0
-    },
-    {
-      "dialect": "Chichewa",
-      "count": 0
-    }
-  ],
-  "crop_region_gaps_under_10_total": 134,
-  "crop_region_gaps_under_10_sample": [
-    {
-      "crop": "cowpea",
-      "region": "Ghana",
-      "count": 1
-    },
-    {
-      "crop": "mango",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "sorghum",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "onion",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "pepper",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "okra",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "millet",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "coffee",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "tea",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "cabbage",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "tomato",
-      "region": "Tanzania",
-      "count": 1
-    },
-    {
-      "crop": "tea",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "amaranth",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "watermelon",
-      "region": "Ghana",
-      "count": 1
-    },
-    {
-      "crop": "cashew",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "cassava",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "maize",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "tomato",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "mango",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "groundnut",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "cocoa",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "plantain",
-      "region": "Ghana",
-      "count": 1
-    },
-    {
-      "crop": "sorghum",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "coffee",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "cotton",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "amaranth",
-      "region": "Ghana",
-      "count": 1
-    },
-    {
-      "crop": "cabbage",
-      "region": "Rwanda",
-      "count": 1
-    },
-    {
-      "crop": "cassava",
-      "region": "Malawi",
-      "count": 1
-    },
-    {
-      "crop": "maize",
-      "region": "Uganda",
-      "count": 1
-    },
-    {
-      "crop": "cassava",
-      "region": "Ethiopia",
-      "count": 1
-    }
-  ],
-  "recommendations": [
-    "Add entries for 10 crops with <10 samples: sunflower, wheat, irish potato, sugarcane, coconut...",
-    "Boost coverage for 4 regions with <10 samples: Uganda, Ghana, Malawi, Rwanda",
-    "Add 10 missing dialects: Luganda, Kinyarwanda, Bemba, Bengali, Oromo...",
-    "134 crop+region combinations have <10 entries - prioritize high-value crops in underrepresented regions",
-    "Need 500 more entries to reach 1000-entry target (currently at 50.0%)"
-  ]
+  "underrepresented_combos": 344,
+  "nigerian_entries": 448,
+  "english_refusals_remaining": 0
 }

@@ -34,6 +34,7 @@ KNOWN_DIALECTS = {
     "Igbo", "Kikuyu", "Luo", "Punjabi", "Bengali", "Tamil", "Amharic",
     "Oromo", "Luganda", "Kinyarwanda", "Chichewa", "Bemba",
     "Spanish", "Portuguese", "Quechua", "French",
+    "Twi",
 }
 
 KNOWN_CROPS = {
@@ -43,6 +44,7 @@ KNOWN_CROPS = {
     "coffee", "cocoa", "cotton", "cashew", "tea", "oil palm",
     "plantain", "beans", "soybean", "sunflower", "coconut", "pigeon pea",
     "sugarcane", "wheat", "barley", "teff",
+    "dairy",
 }
 
 BANNED_TERMS = [

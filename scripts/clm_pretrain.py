@@ -32,10 +32,11 @@ MAX_LENGTH = 128
 BATCH_SIZE = 1
 GRADIENT_ACCUMULATION = 4
 LEARNING_RATE = 5e-5
-MAX_STEPS = 50
-WARMUP_STEPS = 5
+MAX_STEPS = 100
+WARMUP_STEPS = 10
 LOGGING_STEPS = 5
 EVAL_STEPS = 25
+SAVE_STEPS = 50
 SEED = 42
 
 torch.manual_seed(SEED)
@@ -189,6 +190,13 @@ while global_step < MAX_STEPS:
         ppl = math.exp(avg_val_loss)
         log(f"  >>> Eval  @ step {global_step}: loss={avg_val_loss:.4f}  perplexity={ppl:.2f}")
         model.train()
+
+    # Save intermediate checkpoint
+    if SAVE_STEPS > 0 and global_step % SAVE_STEPS == 0:
+        ckpt_dir = OUTPUT_DIR / f"step-{global_step}"
+        ckpt_dir.mkdir(parents=True, exist_ok=True)
+        model.save_pretrained(str(ckpt_dir))
+        log(f"  >>> Saved checkpoint to {ckpt_dir}")
 
 # ── Save adapter ──────────────────────────────────────────────────────────
 log("\nSaving LoRA adapter...")

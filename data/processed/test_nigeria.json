@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "agri-931",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "okra",
+    "question": "Mbaaɗa. Mi yi'i white powdery coating on leaves e la'ano am. Ɗume rafi woni ɗo'o?",
+    "answer": "powdery mildew woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spreads in dry season. Nyawndam: spray sulfur fungicide. remove infected leaves.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for okra farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-737",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "dairy",
+    "question": "Ụtụtụ ọma. Ahụrụ m sores in mouth and on hooves na mmiri ara m. Kedu ọrịa nke a bụ?",
+    "answer": "foot and mouth disease (FMD) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na highly contagious viral disease. Ngwọta: isolate infected animals. call veterinarian immediately.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for dairy farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-740",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "onion",
+    "question": "Ndewo. Ahụrụ m white fuzzy growth on leaves na yorobo m. Kedu ọrịa nke a bụ?",
+    "answer": "onion downy mildew na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungus spreads in humid conditions. Ngwọta: reduce overhead irrigation. plant resistant varieties.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for onion farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-004",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sorghum",
+    "question": "Eku oo, mo ri pe awon ewe sorghum mi ti n are showing signs of striga weed. Kini ohun ti mo le se lati gba to?",
+    "answer": "Eyi je kokoro sorghum shoot fly. Esinsin yi n yin eyin si ori ewe kekere, idin re si n wo inu igi. Imoran: gbin ni kutukutu, tabi lo irugbin ti o lagbara bi SAMSORG 40.",
+    "source": "NAERLS-Extension, pest/disease advisory for sorghum farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-909",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "amaranth",
+    "question": "No wa'i. kohi am woodi caɗeele — holes in stems and wilting leaves. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "amaranth stem borer woni ko bonnata ndemri maa. moth larvae bore into stems. Ko mbaɗata: spray neem oil. Woto yejjito — remove infected plants.",
+    "source": "ILRI/IAR Samaru, pest management advisory for amaranth farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-162",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cotton",
+    "question": "Sannu da aiki. auduga ta na da matsala — larvae bore into bolls causing them to drop. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga cotton bollworm (Helicoverpa armigera). polyphagous pest — also attacks tomato and maize. Magani: Bt cotton provides genetic resistance. Kada ka manta — spray neem kernel extract at flowering.",
+    "source": "NAERLS-Zaria, pest management advisory for cotton farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-446",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "coffee",
+    "question": "Se dada ni. Mo ri wipe kofi mi ni small holes in coffee berries with damage inside. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "coffee berry borer (Hypothenemus hampei) lo n damu oko re. most serious coffee pest globally. Ohun ti o ye ki o se: harvest all ripe berries promptly. Ma gbagbe — use broca traps with ethanol-methanol mix.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for coffee farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-932",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cotton",
+    "question": "Sannu. Miɗo yiɗi anndude no mi waɗirta cotton planting e ndemri lawol am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow cotton planting e lawol: plant at start of rainy season. Ɗum wallitata sabo space 90cm between rows, 30cm between plants. prune dead branches to reduce disease.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for cotton farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-999",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "watermelon",
+    "question": "No wa'i. kankana am woodi caɗeele — larvae inside fruit causing rot. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "melon fruit fly (Bactrocera cucurbitae) woni ko bonnata ndemri maa. fly punctures fruit to lay eggs. Ko mbaɗata: cover young fruits with paper bags. Woto yejjito — harvest early before pest builds up.",
+    "source": "ILRI/IAR Samaru, pest management advisory for watermelon farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-956",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cocoa",
+    "question": "Mbaaɗa. Miɗo yiɗi anndude no mi waɗirta cocoa cultivation e ndemri koko am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow cocoa cultivation e koko: plant shade trees like plantain. Ɗum wallitata sabo maintain field cleanliness regularly. spray copper fungicide for black pod prevention.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for cocoa farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-657",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "millet",
+    "question": "Ụtụtụ ọma. Achọrọ m ịmata otu m ga-esi millet planting n'ugbo millet m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka millet planting na millet: broadcast or plant in rows. Nke a na-enyere aka n'ihi na millet is highly drought-tolerant. plant at start of rains for good yield.",
+    "source": "NRCRI Umudike, cultural practice advisory for millet farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-788",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cassava",
+    "question": "Jam na. Miɗo yiɗi anndude no mi waɗirta weeding schedule e ndemri rogo am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow weeding schedule e rogo: first weeding 3 weeks after planting, second at 8 weeks. Ɗum wallitata sabo competing weeds reduce yield by 40%. maintain clean field throughout growth.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for cassava farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-900",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cassava",
+    "question": "A salaamun alaikum. rogo am woodi caɗeele — leaves appear bunched and distorted. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "cassava mealybug (Phenacoccus manihoti) woni ko bonnata ndemri maa. mealybug sucks plant sap. Ko mbaɗata: release parasitic wasp Apoanagyrus lopezi for control. Woto yejjito — significantly reduces tuber size.",
+    "source": "ILRI/IAR Samaru, pest management advisory for cassava farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-769",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "watermelon",
+    "question": "Nnọọ. watermelon m nwere nsogbu — larvae inside fruit causing rot. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "melon fruit fly (Bactrocera cucurbitae) na-akpata nsogbu n'ubi gị. fly punctures fruit to lay eggs. Ihe ị ga-eme: cover young fruits with paper bags. Echefula — harvest early before pest builds up.",
+    "source": "NRCRI Umudike, pest management advisory for watermelon farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-937",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "amaranth",
+    "question": "Sannu. Mi yi'i brown spots on leaves e kohi am. Ɗume rafi woni ɗo'o?",
+    "answer": "leaf spot (Alternaria amaranthi) woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spread by rain. Nyawndam: spray copper fungicide. reduce overhead irrigation.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for amaranth farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-699",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "plantain",
+    "question": "Nnọọ. Achọrọ m ịmata otu m ga-esi plantain planting n'ugbo ogidi m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka plantain planting na ogidi: use healthy suckers from reliable source. Nke a na-enyere aka n'ihi na space 3m between plants. apply mulch to conserve moisture.",
+    "source": "NRCRI Umudike, cultural practice advisory for plantain farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-118",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "yam",
+    "question": "Daalunu. yam m anaghị eto nke ọma, akwukwo na-akpọnwụ. Gini ka m ga-eme?",
+    "answer": "The yellow-green leaf pattern you describe is Cassava Mosaic Disease caused by geminiviruses transmitted by whiteflies. There is no chemical cure. (1) Uproot and burn ALL affected plants immediately — do NOT use them as planting material. (2) Use certified mosaic-resistant varieties: TME 419, TMS 30572, or IITA-TMS-I011412. (3) Plant stakes at the recommended spacing of 1 m × 1 m. (4) Avoid recycling stakes from infected fields. (5) Intercrop with maize or cowpea to reduce whitefly populations. Contact your nearest IITA or NRCRI extension office for free resistant planting material.",
+    "source": "NRCRI Extension Bulletin; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-739",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "pepper",
+    "question": "Nnọọ. ose m nwere nsogbu — fruits rot from inside with maggots. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "pepper fruit fly (Bactrocera latifrons) na-akpata nsogbu n'ubi gị. fly punctures fruit to lay eggs. Ihe ị ga-eme: harvest regularly before pest builds up. Echefula — bag young fruits with paper.",
+    "source": "NRCRI Umudike, pest management advisory for pepper farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-831",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "millet",
+    "question": "Mbaaɗa. gawri am woodi caɗeele — chaffy grains with caterpillar inside panicle. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "millet head miner (Heliocheilus albipunctella) woni ko bonnata ndemri maa. moth pest of pearl millet. Ko mbaɗata: plant early to avoid peak infestation. Woto yejjito — use resistant variety ZATIP.",
+    "source": "ILRI/IAR Samaru, pest management advisory for millet farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-012",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "plantain",
+    "question": "Mo ni iṣoro pẹlu plantain mi, awon ewe re ni awon aami bi mosaic lori ewe, ko si dagba daradara. Jowo ran mi lowo.",
+    "answer": "Eyi le jẹ ọkan ninu awọn arun ti o n kọlu plantain. Mo daba pe ki o kan si ofiisi igbimo agbe agbegbe re fun ayẹwo gangan. Mase duro pe arun le tan. Oluwa a se wa lore.",
+    "source": "NAERLS-Extension, general advisory for plantain farmers",
+    "category": "general inquiry"
+  },
+  {
+    "id": "agri-567",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "rice",
+    "question": "E karo. Mo ri diamond-shaped gray lesions on leaves lori iresi mi. Arun wo ni eyi?",
+    "answer": "rice blast (Pyricularia oryzae) lo n ba oko re je. O n tan kaakiri nipa fungal spores carried by wind. Itoju: use resistant varieties like FARO 44. excess nitrogen makes blast worse.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for rice farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-258",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cashew",
+    "question": "A wali. cashew am woodi caɗeele — grub bores into trunk causing branch dieback. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "Ɗo'o ko ñoɓɓere wi'eteende cashew stem borer. entry holes with frass visible. Safaare: inject neem oil into bore holes. Woto yejjite — keep trees healthy with organic mulch.",
+    "source": "NASC-Adamawa, pest management advisory for cashew farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-542",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "yam",
+    "question": "E karo. Mo ri wipe isu mi ni holes bored into tubers reducing market value. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "yam beetle (Heteroligus meles) lo n damu oko re. adult beetles feed at night. Ohun ti o ye ki o se: deep planting (15cm) reduces damage. Ma gbagbe — mulching with neem leaves repels beetles.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for yam farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-480",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sweet potato",
+    "question": "Ek'abo. Mo ri yellow stunted leaves lori anamo mi. Arun wo ni eyi?",
+    "answer": "sweet potato virus disease (SPVD) lo n ba oko re je. O n tan kaakiri nipa spread by whiteflies and aphids. Itoju: use virus-free vines. remove infected plants.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for sweet potato farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-964",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "amaranth",
+    "question": "No wa'i. Mi yi'i brown spots on leaves e kohi am. Ɗume rafi woni ɗo'o?",
+    "answer": "leaf spot (Alternaria amaranthi) woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spread by rain. Nyawndam: spray copper fungicide. reduce overhead irrigation.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for amaranth farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-391",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "onion",
+    "question": "Assalamu alaikum. Na ga purple-brown lesions on leaves that girdle them a jikin albasa ta. Wace cuta ce wannan?",
+    "answer": "onion purple blotch (Alternaria porri) ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus Alternaria porri. Magani: spray mancozeb every 10 days. rotate away from allium fields for 3 years.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for onion farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-395",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "plantain",
+    "question": "Sannu. Ina so in san yadda zan plantain planting a aikin ayaba don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da plantain planting a aikin ayaba: use healthy suckers from reliable source. Wannan yana taimakawa domin space 3m between plants. apply mulch to conserve moisture.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for plantain farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-066",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "rice",
+    "question": "Sannu. rice na ba ya girma sosai, ganye suna bushewa. Me zan yi?",
+    "answer": "Oval brown spots on leaves indicate brown spot (Cochliobolus miyabeanus), often associated with nutrient deficiency, especially silicon. (1) Apply potassium silicate at 2 ml/L foliar spray — this strengthens leaf cell walls. (2) Apply balanced NPK (15-15-15) at 200 kg/ha if the crop appears yellowish overall. (3) Spray propiconazole at 1 ml/L if spots cover >10% of leaf area. (4) Avoid water stress — maintain 2-5 cm standing water. (5) For the next season, incorporate rice husks into the soil to increase silicon availability.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-611",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "sweet potato",
+    "question": "Kedu. Ahụrụ m yellow stunted leaves na nduku m. Kedu ọrịa nke a bụ?",
+    "answer": "sweet potato virus disease (SPVD) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na spread by whiteflies and aphids. Ngwọta: use virus-free vines. remove infected plants.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for sweet potato farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-957",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "mango",
+    "question": "Sannu. mangoro am woodi caɗeele — small puncture marks on fruit with larvae inside. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "mango fruit fly (Bactrocera dorsalis) woni ko bonnata ndemri maa. female fly lays eggs under skin. Ko mbaɗata: use pheromone traps (methyl eugenol). Woto yejjito — collect fallen fruits and bury deep.",
+    "source": "ILRI/IAR Samaru, pest management advisory for mango farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-697",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cowpea",
+    "question": "Ụtụtụ ọma. agwa m nwere nsogbu — curled leaves with sticky honeydew. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "cowpea aphid (Aphis craccivora) na-akpata nsogbu n'ubi gị. aphids colonize young shoots. Ihe ị ga-eme: spray neem extract or insecticidal soap. Echefula — aphids also transmit cowpea mosaic virus.",
+    "source": "NRCRI Umudike, pest management advisory for cowpea farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-812",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "watermelon",
+    "question": "Sannu. Miɗo yiɗi anndude no mi waɗirta watermelon planting e ndemri kankana am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow watermelon planting e kankana: direct seed in field. Ɗum wallitata sabo space 2m between rows, 1m between plants. watermelon needs full sun and well-drained soil.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for watermelon farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-959",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cotton",
+    "question": "No wa'i. Miɗo yiɗi anndude no mi waɗirta cotton planting e ndemri lawol am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow cotton planting e lawol: plant at start of rainy season. Ɗum wallitata sabo space 90cm between rows, 30cm between plants. prune dead branches to reduce disease.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for cotton farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-643",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "plantain",
+    "question": "Ezigbo ụbọchị. ogidi m nwere nsogbu — larvae tunnel into corm causing toppling. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "banana weevil (Cosmopolites sordidus) na-akpata nsogbu n'ubi gị. adults hide in crop residues. Ihe ị ga-eme: use clean planting material (tissue culture). Echefula — trap adults with pseudostem discs.",
+    "source": "NRCRI Umudike, pest management advisory for plantain farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-157",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "amaranth",
+    "question": "Sannu da aiki. alaiho ta na da matsala — caterpillar webs leaves together and feeds inside. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga amaranth leaf webber. pest of leafy amaranth vegetables. Magani: hand-pick and destroy webbed leaves. Kada ka manta — neem spray prevents egg laying.",
+    "source": "NAERLS-Zaria, pest management advisory for amaranth farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-113",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "maize",
+    "question": "Nnukwu m, akwukwo maize m nwere obere ahụhụ na akwụkwọ. Biko nyere m aka.",
+    "answer": "Chlorotic streaks following leaf veins indicate Maize Streak Virus transmitted by leafhoppers (Cicadulina spp.). There is no cure. (1) Remove and destroy all affected plants immediately. (2) Plant early at the onset of rains to avoid peak leafhopper populations. (3) Use streak-resistant hybrids: ZM 623, SC 627, or WH 505. (4) Do not plant maize near irrigated vegetable fields, which harbor leafhoppers year-round. (5) Apply carbofuran granules at 1.5 kg a.i./ha to the soil at planting to control early-season vectors. (6) Save seed only from completely disease-free plants.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-049",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "tomato",
+    "question": "Mo ni isoro pelu tomato mi, awon ewe re ni awon kokoro funfun lori ewe. Jowo ran mi lowo.",
+    "answer": "Fine webbing and yellow stippling on leaves indicate spider mites (Tetranychus spp.), which thrive in hot, dry conditions. (1) Spray the underside of leaves with a strong jet of water every 3 days to dislodge mites and break webbing. (2) Apply micronized sulfur at 3 g/L or abamectin at 0.5 ml/L. (3) Avoid pyrethroids and broad-spectrum insecticides — they kill predatory mites and trigger mite explosions. (4) Increase humidity around plants by mulching and watering the ground (not leaves) in the morning. (5) For heavy infestation, release Phytoseiulus persimilis predatory mites — 10/m².",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-774",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "sunflower",
+    "question": "Nnọọ. Achọrọ m ịmata otu m ga-esi sunflower planting n'ugbo sunflower m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka sunflower planting na sunflower: sow seeds 2-3cm deep. Nke a na-enyere aka n'ihi na space 75cm between rows, 30cm between plants. sunflower needs full sun.",
+    "source": "NRCRI Umudike, cultural practice advisory for sunflower farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-094",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "yam",
+    "question": "Daalunu. yam m na-acha odo odo na ntụpọ ojii. Gini ka m ga-eme?",
+    "answer": "Dark, sunken lesions on leaves, stems, and fruit indicate anthracnose (Colletotrichum spp.). (1) Remove and destroy all infected plant parts — do NOT compost them. (2) Spray copper oxychloride at 3 g/L or mancozeb at 2.5 g/L every 10-14 days, starting at flowering. (3) Prune to improve air circulation and reduce humidity. (4) Apply 2-3 cm of organic mulch to prevent rain splash. (5) For the next season, use certified disease-free seed and practice 3-year crop rotation with cereals. Pre-harvest interval: 7-14 days depending on the product.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-506",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "amaranth",
+    "question": "Se dada ni. Mo ri wipe tete mi ni holes in stems and wilting leaves. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "amaranth stem borer lo n damu oko re. moth larvae bore into stems. Ohun ti o ye ki o se: spray neem oil. Ma gbagbe — remove infected plants.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for amaranth farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-522",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sunflower",
+    "question": "E karo. Mo ri yellow leaves with white underside lori sunflower mi. Arun wo ni eyi?",
+    "answer": "downy mildew lo n ba oko re je. O n tan kaakiri nipa fungus survives in soil. Itoju: use resistant varieties. rotate crops for 3 years.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for sunflower farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-142",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "tomato",
+    "question": "Sannu da aiki. tumatir ta na da matsala — mines inside leaves creating translucent patches. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga tomato leaf miner (Tuta absoluta). moth pest spreads rapidly. Magani: use pheromone traps and neem spray. Kada ka manta — can destroy whole field in 2 weeks without control.",
+    "source": "NAERLS-Zaria, pest management advisory for tomato farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-882",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cashew",
+    "question": "Sannu. kasu am woodi caɗeele — dead branches and holes in bark. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "cashew stem girdler woni ko bonnata ndemri maa. beetle girdles branches. Ko mbaɗata: prune affected branches. Woto yejjito — maintain field cleanliness.",
+    "source": "ILRI/IAR Samaru, pest management advisory for cashew farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-926",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "sweet potato",
+    "question": "Mbaaɗa. Miɗo yiɗi anndude no mi waɗirta sweet potato planting e ndemri dankali am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow sweet potato planting e dankali: plant healthy vines 25-30cm long. Ɗum wallitata sabo space 1m between rows, 30cm between plants. plant at start of rainy season.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for sweet potato farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-409",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "rice",
+    "question": "Ina kwana. Na ga diamond-shaped gray lesions on leaves a jikin shinkafa ta. Wace cuta ce wannan?",
+    "answer": "rice blast (Pyricularia oryzae) ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungal spores carried by wind. Magani: use resistant varieties like FARO 44. excess nitrogen makes blast worse.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for rice farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-598",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "okra",
+    "question": "Ezigbo ụbọchị. okwuru m nwere nsogbu — small round holes in leaves like shot pattern. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "okra flea beetle (Podagrica uniforma) na-akpata nsogbu n'ubi gị. heavy infestation defoliates young plants. Ihe ị ga-eme: neem oil spray and ash dusting. Echefula — plant early to escape peak beetle season.",
+    "source": "NRCRI Umudike, pest management advisory for okra farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-439",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "dairy",
+    "question": "Bawo ni. Mo fe mo bi mo se le grazing rotation fun oko ifunni mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori grazing rotation fun ifunni: rotate grazing areas every week. Eyi yoo se iranlowo nitori pe allow pasture to rest between grazing. this prevents overgrazing and reduces disease.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for dairy farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-599",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "pepper",
+    "question": "Nnọọ. Ahụrụ m dark water-soaked spots on leaves and fruit na ose m. Kedu ọrịa nke a bụ?",
+    "answer": "bacterial spot (Xanthomonas campestris) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na bacteria spread by rain splash. Ngwọta: copper spray at transplanting. use disease-free seed from reliable source.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for pepper farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-765",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "coffee",
+    "question": "Ndewo. Achọrọ m ịmata otu m ga-esi coffee maintenance n'ugbo kofi m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka coffee maintenance na kofi: prune old branches. Nke a na-enyere aka n'ihi na apply organic fertilizer annually. maintain good shade cover.",
+    "source": "NRCRI Umudike, cultural practice advisory for coffee farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-270",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "sunflower",
+    "question": "Furen rana (sunflower) na ganye suna yin launin ruwan kasa. Cutace ne?",
+    "answer": "Launin ruwan kasa a ganyen furen rana cutace ne na Alternaria blight. (1) Cire ganyen da suka kamu da cutar — kona su. (2) Yi amfani da iri masu jurewa cutar: 'KBSH 53', 'PSFH 118'. (3) Yi maganin iri da ruwan zafi (52°C) na mintuna 10 kafin shuka. (4) Yi amfani da mai na neem (neem oil 5ml/lita). (5) Juya amfanin gona — kada a shuka furen rana a gona guda kowace shekara. (6) Tuntuɓi jami'in noma don ƙarin shawara.",
+    "source": "NAERLS Sunflower Guide; ICRISAT Alternaria Management",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-552",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "okra",
+    "question": "E karo. Mo ri white powdery coating on leaves lori ila mi. Arun wo ni eyi?",
+    "answer": "powdery mildew lo n ba oko re je. O n tan kaakiri nipa fungus spreads in dry season. Itoju: spray sulfur fungicide. remove infected leaves.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for okra farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-975",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "tea",
+    "question": "A salaamun alaikum. shayi am woodi caɗeele — dark spots on leaves and young shoots. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "tea mosquito bug (Helopeltis antonii) woni ko bonnata ndemri maa. bug pierces leaves and sucks sap. Ko mbaɗata: spray neem oil. Woto yejjito — prune affected branches.",
+    "source": "ILRI/IAR Samaru, pest management advisory for tea farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-763",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cotton",
+    "question": "Ezigbo ụbọchị. cotton m nwere nsogbu — larvae bore into bolls causing them to drop. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "cotton bollworm (Helicoverpa armigera) na-akpata nsogbu n'ubi gị. polyphagous pest — also attacks tomato and maize. Ihe ị ga-eme: Bt cotton provides genetic resistance. Echefula — spray neem kernel extract at flowering.",
+    "source": "NRCRI Umudike, pest management advisory for cotton farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-253",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "groundnut",
+    "question": "Nnọọ. akidi m nwere nsogbu — stunted plants with curled yellow leaves. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "Nke a bụ ahụhụ a na-akpọ groundnut aphid. aphids vector rosette virus. Ngwọta: early planting avoids peak aphid season. Echefula — neem seed extract spray.",
+    "source": "NRCRI-Umudike, pest management advisory for groundnut farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-993",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "tomato",
+    "question": "Jam na. tumate am woodi caɗeele — mines inside leaves leaving transparent patches. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "tomato leaf miner (Tuta absoluta) woni ko bonnata ndemri maa. moth pest spreads rapidly. Ko mbaɗata: use pheromone traps and neem spray. Woto yejjito — can destroy whole field in 2 weeks without control.",
+    "source": "ILRI/IAR Samaru, pest management advisory for tomato farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-272",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "beans",
+    "question": "Wake na suna da tsutsotsi a ciki. Yadda za a ajiye su?",
+    "answer": "Tsutsotsi a cikin wake (weevils) matsala ce ta ajiya. (1) Bushe wake da rana sosai kafin a adana. (2) Gama da mai na neem (neem oil 5ml/lita). (3) Ajiye a cikin kwandon da iska ba ta shiga (airtight container). (4) Saka wake a injin daskarewa (freezer) na kwanaki 7 — tsutsotsi za su mutu. (5) Tsabtace wurin ajiya sosai. (6) Tuntuɓi jami'in noma don samun iri masu jurewa tsutsotsi.",
+    "source": "NAERLS Bean Storage Guide; CIAT Post-Harvest Advisory",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-147",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "groundnut",
+    "question": "Sannu da aiki. gyada ta na da matsala — stunted plants with curled yellow leaves. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga groundnut aphid. aphids vector rosette virus. Magani: early planting avoids peak aphid season. Kada ka manta — neem seed extract spray.",
+    "source": "NAERLS-Zaria, pest management advisory for groundnut farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-470",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "onion",
+    "question": "Ek'abo. Mo ri wipe alubosa mi ni silvery streaks and twisted leaves. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "onion thrips (Thrips tabaci) lo n damu oko re. thrips suck plant sap. Ohun ti o ye ki o se: spray insecticidal soap. Ma gbagbe — plant onions away from other allium fields.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for onion farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-659",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "oil palm",
+    "question": "Nnọọ. Ahụrụ m yellow leaves and rotting trunk base na nkwu m. Kedu ọrịa nke a bụ?",
+    "answer": "basal stem rot (Ganoderma boninense) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungus survives in soil and wood debris. Ngwọta: remove and burn infected trees. keep field clear of wood debris.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for oil palm farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-406",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "watermelon",
+    "question": "Assalamu alaikum. Na ga dark spots on fruit and leaves a jikin kankana ta. Wace cuta ce wannan?",
+    "answer": "anthracnose ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus spread by rain splash. Magani: spray fungicide at flowering. rotate crops.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for watermelon farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-512",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cowpea",
+    "question": "E karo. Mo ri wipe ere mi ni holes in pods with frass inside. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "pod borer (Maruca vitrata) lo n damu oko re. moth lays eggs on flowers. Ohun ti o ye ki o se: spray Bacillus thuringiensis (Bt) at flowering. Ma gbagbe — one larva destroys 4-6 pods in its lifetime.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for cowpea farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-672",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cassava",
+    "question": "Ụtụtụ ọma. Achọrọ m ịmata otu m ga-esi weeding schedule n'ugbo akpu m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka weeding schedule na akpu: first weeding 3 weeks after planting, second at 8 weeks. Nke a na-enyere aka n'ihi na competing weeds reduce yield by 40%. maintain clean field throughout growth.",
+    "source": "NRCRI Umudike, cultural practice advisory for cassava farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-218",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cocoa",
+    "question": "E ku aaro. Mo ri pods turn black with white flour-like coating lori kòkó mi. Arun wo ni eyi?",
+    "answer": "Eyi je arun ti a mo si black pod disease (Phytophthora megakarya). O n tan kaakiri nipase most serious cocoa disease in West Africa. harvest ripe pods promptly — delay increases rot. Ohun ti o ye ki o se: remove infected pods and spray copper fungicide. harvest ripe pods promptly — delay increases rot.",
+    "source": "IAR&T-Ibadan, disease diagnosis advisory for cocoa farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-323",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "maize",
+    "question": "Barka dai. Ina so in san yadda zan proper maize spacing a aikin masara don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da proper maize spacing a aikin masara: space rows 75cm apart, plants 25cm apart. Wannan yana taimakawa domin gives enough light and air. reduces competition between plants for nutrients.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for maize farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-736",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "sunflower",
+    "question": "Kedu. sunflower m nwere nsogbu — larvae in sunflower head feeding on seeds. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "head moth (Homoeosoma electellum) na-akpata nsogbu n'ubi gị. moth lays eggs on flowers. Ihe ị ga-eme: spray Bt at flowering. Echefula — plant resistant varieties.",
+    "source": "NRCRI Umudike, pest management advisory for sunflower farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-581",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "millet",
+    "question": "Se dada ni. Mo ri wipe jero mi ni chaffy grains with caterpillar inside panicle. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "millet head miner (Heliocheilus albipunctella) lo n damu oko re. moth pest of pearl millet. Ohun ti o ye ki o se: plant early to avoid peak infestation. Ma gbagbe — use resistant variety ZATIP.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for millet farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-217",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "watermelon",
+    "question": "E ku agba mi. Mo ri white powder on leaves reducing photosynthesis lori gbogiri mi. Arun wo ni eyi?",
+    "answer": "Eyi je arun ti a mo si powdery mildew on watermelon. O n tan kaakiri nipase thrives in dry warm weather. plant resistant hybrid varieties. Ohun ti o ye ki o se: sulfur spray at first sign. plant resistant hybrid varieties.",
+    "source": "IAR&T-Ibadan, disease diagnosis advisory for watermelon farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-068",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "mango",
+    "question": "Sannu. mango na suna yin rawaya tare da bakaken tabo. Me zan yi?",
+    "answer": "Dark, sunken lesions on leaves, stems, and fruit indicate anthracnose (Colletotrichum spp.). (1) Remove and destroy all infected plant parts — do NOT compost them. (2) Spray copper oxychloride at 3 g/L or mancozeb at 2.5 g/L every 10-14 days, starting at flowering. (3) Prune to improve air circulation and reduce humidity. (4) Apply 2-3 cm of organic mulch to prevent rain splash. (5) For the next season, use certified disease-free seed and practice 3-year crop rotation with cereals. Pre-harvest interval: 7-14 days depending on the product.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-275",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cowpea",
+    "question": "Nebbe am na mari kuje (spots) ɓaleeje. Koyɗe na wuwru?",
+    "answer": "Kuje ɓaleeje ɗen ko anthracnose. (1) Lartu nebbe ɗe mbaayɗe — suna ɗe. (2) Demoo gabbe ɗe ngooɗata — ko ADP yeɗata. (3) Luurtin ndema. (4) Huutoro fungicide (copper-based) — yeewtu e ADP. (5) Demoo nebbe dow ngeeneede (ridges) — ndiyam ɗam woto dar. (6) Nebbe ruftuɗe ɗen lartu e nder kawral.",
+    "source": "ADP Cowpea Anthracnose Guide; IITA Disease Management",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-411",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "tomato",
+    "question": "Assalamu alaikum. tumatir ta na da matsala — mines inside leaves leaving transparent patches. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "tomato leaf miner (Tuta absoluta) ne ke damun amfanin gonar ka. moth pest spreads rapidly. Abin da za ka yi: use pheromone traps and neem spray. Kada ka manta — can destroy whole field in 2 weeks without control.",
+    "source": "NAERLS/ABU Zaria, pest management advisory for tomato farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-324",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cassava",
+    "question": "Ina kwana. rogo ta na da matsala — leaves appear bunched and distorted. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "cassava mealybug (Phenacoccus manihoti) ne ke damun amfanin gonar ka. mealybug sucks plant sap. Abin da za ka yi: release parasitic wasp Apoanagyrus lopezi for control. Kada ka manta — significantly reduces tuber size.",
+    "source": "NAERLS/ABU Zaria, pest management advisory for cassava farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-825",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "amaranth",
+    "question": "A salaamun alaikum. kohi am woodi caɗeele — holes in stems and wilting leaves. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "amaranth stem borer woni ko bonnata ndemri maa. moth larvae bore into stems. Ko mbaɗata: spray neem oil. Woto yejjito — remove infected plants.",
+    "source": "ILRI/IAR Samaru, pest management advisory for amaranth farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-983",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "okra",
+    "question": "Jam na. Miɗo yiɗi anndude no mi waɗirta okra planting e ndemri la'ano am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow okra planting e la'ano: sow seeds 2-3cm deep. Ɗum wallitata sabo space 60cm between rows, 30cm between plants. okra needs full sun and well-drained soil.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for okra farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-842",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "sweet potato",
+    "question": "Sannu. Miɗo yiɗi anndude no mi waɗirta sweet potato planting e ndemri dankali am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow sweet potato planting e dankali: plant healthy vines 25-30cm long. Ɗum wallitata sabo space 1m between rows, 30cm between plants. plant at start of rainy season.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for sweet potato farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-235",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "okra",
+    "question": "Ezigbo ohi. okwuru m nwere nsogbu — small round holes in leaves like shot pattern. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "Nke a bụ ahụhụ a na-akpọ okra flea beetle. heavy infestation defoliates young plants. Ngwọta: neem oil spray and ash dusting. Echefula — plant early to escape peak beetle season.",
+    "source": "NRCRI-Umudike, pest management advisory for okra farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-058",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "oil palm",
+    "question": "Ina fama da matsalar oil palm ta. Ganyayyakin sun suna yin rawaya tare da bakaken tabo. Yaya zan magance wannan?",
+    "answer": "Yellowing patterns on oil palm indicate nutrient deficiency. (1) For nitrogen deficiency (uniform yellowing of older leaves): apply urea at 1-2 kg per tree per year, split into 2 applications. (2) For potassium deficiency (orange spotting on older leaves): apply muriate of potash at 2-3 kg per tree per year. (3) For magnesium deficiency (yellowing between veins of older leaves): apply kieserite at 0.5-1 kg per tree. (4) Apply empty fruit bunch (EFB) mulch at 60 t/ha around palms — it slowly releases nutrients. (5) Conduct a leaf analysis (take leaf #17 from 20 palms) to confirm which nutrients are deficient before large-scale fertiliser application.",
+    "source": "NRCRI Extension Bulletin; reviewed agricultural literature",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-795",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "banana",
+    "question": "A salaamun alaikum. ayaba am woodi caɗeele — curled leaves with aphids underneath. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "banana aphid (Pentalonia nigronervosa) woni ko bonnata ndemri maa. aphids transmit bunchy top virus. Ko mbaɗata: spray insecticidal soap. Woto yejjito — remove infected plants.",
+    "source": "ILRI/IAR Samaru, pest management advisory for banana farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-787",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "dairy",
+    "question": "Sannu. Mi yi'i sores in mouth and on hooves e kossam am. Ɗume rafi woni ɗo'o?",
+    "answer": "foot and mouth disease (FMD) woni rafi bonnata ndemri maa. Ɗum saakitoo e highly contagious viral disease. Nyawndam: isolate infected animals. call veterinarian immediately.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for dairy farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-864",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "pepper",
+    "question": "No wa'i. citta am woodi caɗeele — fruits rot from inside with maggots. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "pepper fruit fly (Bactrocera latifrons) woni ko bonnata ndemri maa. fly punctures fruit to lay eggs. Ko mbaɗata: harvest regularly before pest builds up. Woto yejjito — bag young fruits with paper.",
+    "source": "ILRI/IAR Samaru, pest management advisory for pepper farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-333",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "okra",
+    "question": "Barka dai. kuɓewa ta na da matsala — small round holes in leaves like shot pattern. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "okra flea beetle (Podagrica uniforma) ne ke damun amfanin gonar ka. heavy infestation defoliates young plants. Abin da za ka yi: neem oil spray and ash dusting. Kada ka manta — plant early to escape peak beetle season.",
+    "source": "NAERLS/ABU Zaria, pest management advisory for okra farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-702",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "tomato",
+    "question": "Ụtụtụ ọma. Achọrọ m ịmata otu m ga-esi irrigation n'ugbo tomato m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka irrigation na tomato: water at base of plant, avoid wetting leaves. Nke a na-enyere aka n'ihi na reduce watering when fruits start ripening. drip irrigation gives best results.",
+    "source": "NRCRI Umudike, cultural practice advisory for tomato farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-225",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "yam",
+    "question": "E pele o. Mo ri wipe isu mi ni holes bored into tubers reducing market value. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "Eyi je kokoro ti a n pe ni yam beetle. adult beetles feed at night. Ogba: deep planting (15cm) reduces damage. Mase gbagbe pe — mulching with neem leaves repels beetles.",
+    "source": "IAR&T-Ibadan, pest management advisory for yam farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-571",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cocoa",
+    "question": "Se dada ni. Mo fe mo bi mo se le cocoa cultivation fun oko kòkó mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori cocoa cultivation fun kòkó: plant shade trees like plantain. Eyi yoo se iranlowo nitori pe maintain field cleanliness regularly. spray copper fungicide for black pod prevention.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for cocoa farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-705",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cocoa",
+    "question": "Ndewo. Achọrọ m ịmata otu m ga-esi cocoa cultivation n'ugbo koko m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka cocoa cultivation na koko: plant shade trees like plantain. Nke a na-enyere aka n'ihi na maintain field cleanliness regularly. spray copper fungicide for black pod prevention.",
+    "source": "NRCRI Umudike, cultural practice advisory for cocoa farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-656",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "onion",
+    "question": "Kedu. Ahụrụ m white fuzzy growth on leaves na yorobo m. Kedu ọrịa nke a bụ?",
+    "answer": "onion downy mildew na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungus spreads in humid conditions. Ngwọta: reduce overhead irrigation. plant resistant varieties.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for onion farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-277",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "groundnut",
+    "question": "Jawle am na sewi, gelle na mboddi kadi. Ko torra?",
+    "answer": "Jawle ɗe ngollataa ko leaf spot (Cercospora). (1) Lartu gelle ɗe mbaayɗe — suna. (2) Demoo jawle ɗe ngooɗata: 'CG 7', 'JL 24', 'Serenut 2'. (3) Luurtin ndema. (4) Huutoro neem oil. (5) Demoo e ngeeneede — ndiyam ɗam woto koɗo. (6) Yeewtu e ADP ngam fungicide (copper).",
+    "source": "ADP Groundnut Leaf Spot Guide; ICRISAT Leaf Spot Control",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-389",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "okra",
+    "question": "Ina kwana. Ina so in san yadda zan okra planting a aikin kuɓewa don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da okra planting a aikin kuɓewa: sow seeds 2-3cm deep. Wannan yana taimakawa domin space 60cm between rows, 30cm between plants. okra needs full sun and well-drained soil.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for okra farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-474",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "coffee",
+    "question": "Bawo ni. Mo ri orange powdery dust on undersides of leaves lori kofi mi. Arun wo ni eyi?",
+    "answer": "coffee leaf rust (Hemileia vastatrix) lo n ba oko re je. O n tan kaakiri nipa fungus spread by wind. Itoju: spray copper fungicide. plant resistant varieties.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for coffee farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-168",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "yam",
+    "question": "Sannu da zuwa. Na ga dark spots on leaves and vine dieback a jikin doya ta. Wace cuta ce wannan?",
+    "answer": "Wannan cuta ce da ake kira yam anthracnose. Yana yaduwa ta hanyar fungus spreads in rainy season. avoid planting in waterlogged soil. Abin yi: use resistant variety TDr 95/19177. avoid planting in waterlogged soil.",
+    "source": "NAERLS-Zaria, disease diagnosis advisory for yam farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-995",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "pepper",
+    "question": "A salaamun alaikum. Miɗo yiɗi anndude no mi waɗirta pepper nursery e ndemri citta am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow pepper nursery e citta: start seeds in nursery. Ɗum wallitata sabo transplant after 6-8 weeks. space 45cm between plants, 60cm between rows.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for pepper farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-747",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cabbage",
+    "question": "Ụtụtụ ọma. Achọrọ m ịmata otu m ga-esi cabbage planting n'ugbo kabeji m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka cabbage planting na kabeji: start seeds in nursery. Nke a na-enyere aka n'ihi na transplant after 4-5 weeks. space 45cm between plants.",
+    "source": "NRCRI Umudike, cultural practice advisory for cabbage farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-547",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "tomato",
+    "question": "E karo. Mo fe mo bi mo se le tomato nursery fun oko tomatii mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori tomato nursery fun tomatii: start seeds in nursery bed. Eyi yoo se iranlowo nitori pe transplant after 3-4 weeks. space 60cm between plants, 90cm between rows.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for tomato farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-176",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "pepper",
+    "question": "Sannu. barkono ta na da matsala — fruits rot from inside with maggots. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga pepper fruit fly. fly punctures fruit to lay eggs. Magani: harvest regularly before pest builds up. Kada ka manta — bag young fruits with paper.",
+    "source": "NAERLS-Zaria, pest management advisory for pepper farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-908",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cabbage",
+    "question": "Jam na. Miɗo yiɗi anndude no mi waɗirta cabbage planting e ndemri suu am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow cabbage planting e suu: start seeds in nursery. Ɗum wallitata sabo transplant after 4-5 weeks. space 45cm between plants.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for cabbage farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-624",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "sunflower",
+    "question": "Nnọọ. Achọrọ m ịmata otu m ga-esi sunflower planting n'ugbo sunflower m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka sunflower planting na sunflower: sow seeds 2-3cm deep. Nke a na-enyere aka n'ihi na space 75cm between rows, 30cm between plants. sunflower needs full sun.",
+    "source": "NRCRI Umudike, cultural practice advisory for sunflower farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-074",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "banana",
+    "question": "Ina fama da matsalar banana ta. Ganyayyakin sun suna da kananan kwari akan ganye. Yaya zan magance wannan?",
+    "answer": "Upright, crowded leaves with a 'bunchy' appearance and dark green streaking on petioles indicate Banana Bunchy Top Virus (BBTV) transmitted by the banana aphid (Pentalonia nigronervosa). There is NO cure. (1) Uproot and destroy the entire plant including the corm — bury or burn it. (2) Control the aphid vector by spraying imidacloprid at 0.5 ml/L on all surrounding plants. (3) Never use suckers from an affected field for new plantings. (4) Use tissue-culture plantlets — they are guaranteed virus-free. (5) Contact your agricultural extension office to report BBTV — it is a notifiable disease in most countries. (6) Quarantine any new planting material for 4 weeks.",
+    "source": "NRCRI Extension Bulletin; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-664",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "watermelon",
+    "question": "Nnọọ. watermelon m nwere nsogbu — larvae inside fruit causing rot. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "melon fruit fly (Bactrocera cucurbitae) na-akpata nsogbu n'ubi gị. fly punctures fruit to lay eggs. Ihe ị ga-eme: cover young fruits with paper bags. Echefula — harvest early before pest builds up.",
+    "source": "NRCRI Umudike, pest management advisory for watermelon farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-700",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cassava",
+    "question": "Ndewo. akpu m nwere nsogbu — leaves appear bunched and distorted. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "cassava mealybug (Phenacoccus manihoti) na-akpata nsogbu n'ubi gị. mealybug sucks plant sap. Ihe ị ga-eme: release parasitic wasp Apoanagyrus lopezi for control. Echefula — significantly reduces tuber size.",
+    "source": "NRCRI Umudike, pest management advisory for cassava farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-971",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "yam",
+    "question": "Mbaaɗa. Miɗo yiɗi anndude no mi waɗirta yam planting e ndemri dundu am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow yam planting e dundu: use healthy tuber setts 500g-800g. Ɗum wallitata sabo build mounds 1m apart. apply mulch to conserve moisture.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for yam farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-274",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cowpea",
+    "question": "Nebbe am na ndaanii, gelle na wumɗe. Ko torra?",
+    "answer": "Gelle ɗe wumɗe ko aphids. (1) Lartu nebbe ɗe mbaayɗe — suna ɗe. (2) Huutoro neem oil (5ml e nder litru 1). (3) Demo nebbe ɗe puɗɗotooɗe — mbaadi ADC ɗe ADP. (4) Luurtin ndema — woto a demo nebbe e nokkuure goote hitaande fof. (5) Lartu leɗɗe e nder ngesa. (6) Yeewtu e ADP.",
+    "source": "ADP Cowpea Aphid Control; IITA Cowpea IPM",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-687",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "oil palm",
+    "question": "Ụtụtụ ọma. Achọrọ m ịmata otu m ga-esi oil palm care n'ugbo nkwu m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka oil palm care na nkwu: apply NPK 15-15-15 annually. Nke a na-enyere aka n'ihi na prune dead fronds regularly. clear area around trees to reduce pests.",
+    "source": "NRCRI Umudike, cultural practice advisory for oil palm farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-215",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sweet potato",
+    "question": "E pele o. Mo ri wipe anamo mi ni larvae tunnel into tubers making them bitter. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "Eyi je kokoro ti a n pe ni sweet potato weevil (Cylas formicarius). adults feed on leaves and stems. Ogba: use weevil-free planting material. Mase gbagbe pe — hilling up soil around base prevents entry.",
+    "source": "IAR&T-Ibadan, pest management advisory for sweet potato farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-364",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "millet",
+    "question": "Ina kwana. Na ga yellow and white streaked leaves a jikin gero ta. Wace cuta ce wannan?",
+    "answer": "downy mildew (Sclerospora graminicola) ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus spread by wind and rain. Magani: use resistant varieties. rotate crops for 2 years.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for millet farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-380",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cassava",
+    "question": "Sannu. Ina so in san yadda zan weeding schedule a aikin rogo don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da weeding schedule a aikin rogo: first weeding 3 weeks after planting, second at 8 weeks. Wannan yana taimakawa domin competing weeds reduce yield by 40%. maintain clean field throughout growth.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for cassava farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-167",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "watermelon",
+    "question": "Sannu da aiki. Na ga white powder on leaves reducing photosynthesis a jikin kankana ta. Wace cuta ce wannan?",
+    "answer": "Wannan cuta ce da ake kira powdery mildew on watermelon. Yana yaduwa ta hanyar thrives in dry warm weather. plant resistant hybrid varieties. Abin yi: sulfur spray at first sign. plant resistant hybrid varieties.",
+    "source": "NAERLS-Zaria, disease diagnosis advisory for watermelon farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-374",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "sweet potato",
+    "question": "Ina kwana. Ina so in san yadda zan sweet potato planting a aikin dankali don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da sweet potato planting a aikin dankali: plant healthy vines 25-30cm long. Wannan yana taimakawa domin space 1m between rows, 30cm between plants. plant at start of rainy season.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for sweet potato farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-855",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "beans",
+    "question": "A salaamun alaikum. nyebbe am woodi caɗeele — stunted plants with yellow leaves. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "bean fly (Ophiomyia phaseoli) woni ko bonnata ndemri maa. fly larvae bore into stems. Ko mbaɗata: plant early to escape peak fly season. Woto yejjito — apply mulch around plants.",
+    "source": "ILRI/IAR Samaru, pest management advisory for beans farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-651",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "beans",
+    "question": "Kedu. Achọrọ m ịmata otu m ga-esi bean planting n'ugbo agwa m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka bean planting na agwa: sow seeds 3-5cm deep. Nke a na-enyere aka n'ihi na space 50cm between rows, 10cm between plants. beans fix nitrogen in soil.",
+    "source": "NRCRI Umudike, cultural practice advisory for beans farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-465",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "beans",
+    "question": "Ek'abo. Mo ri angular brown spots on leaves lori ere mi. Arun wo ni eyi?",
+    "answer": "angular leaf spot lo n ba oko re je. O n tan kaakiri nipa fungus spread by rain splash. Itoju: use disease-free seed. rotate crops for 2 years.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for beans farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-955",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cassava",
+    "question": "A salaamun alaikum. Mi yi'i yellow-green mosaic patterns on leaves e rogo am. Ɗume rafi woni ɗo'o?",
+    "answer": "cassava mosaic virus (CMD) woni rafi bonnata ndemri maa. Ɗum saakitoo e spread by whiteflies (Bemisia tabaci). Nyawndam: plant resistant varieties like TME 419. infected plants produce small tubers.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for cassava farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-948",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "onion",
+    "question": "Jam na. albasare am woodi caɗeele — silvery streaks and twisted leaves. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "onion thrips (Thrips tabaci) woni ko bonnata ndemri maa. thrips suck plant sap. Ko mbaɗata: spray insecticidal soap. Woto yejjito — plant onions away from other allium fields.",
+    "source": "ILRI/IAR Samaru, pest management advisory for onion farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-104",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "coffee",
+    "question": "Nnukwu m, akwukwo coffee m na-acha odo odo na ntụpọ ojii. Biko nyere m aka.",
+    "answer": "Dark, sunken lesions on green berries that turn black and drop indicate Coffee Berry Disease (Colletotrichum kahawae). (1) Spray copper oxychloride at 5 g/L on the developing berries at 4, 8, and 12 weeks after flowering. (2) Prune to maintain an open canopy — this reduces humidity and spore dispersal. (3) Strip and burn all mummified berries remaining on branches after harvest. (4) Apply 2 t/ha of well-rotted compost to improve tree vigour. (5) Plant resistant varieties: Ruiru 11 or Batian (available in Kenya). Pre-harvest interval for copper: 21 days.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-888",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cowpea",
+    "question": "Jam na. nyebbe am woodi caɗeele — holes in pods with frass inside. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "pod borer (Maruca vitrata) woni ko bonnata ndemri maa. moth lays eggs on flowers. Ko mbaɗata: spray Bacillus thuringiensis (Bt) at flowering. Woto yejjito — one larva destroys 4-6 pods in its lifetime.",
+    "source": "ILRI/IAR Samaru, pest management advisory for cowpea farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-979",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "dairy",
+    "question": "No wa'i. Mi yi'i sores in mouth and on hooves e kossam am. Ɗume rafi woni ɗo'o?",
+    "answer": "foot and mouth disease (FMD) woni rafi bonnata ndemri maa. Ɗum saakitoo e highly contagious viral disease. Nyawndam: isolate infected animals. call veterinarian immediately.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for dairy farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-876",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cotton",
+    "question": "Mbaaɗa. lawol am woodi caɗeele — larvae bore into bolls causing them to drop. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "cotton bollworm (Helicoverpa armigera) woni ko bonnata ndemri maa. polyphagous pest — also attacks tomato and maize. Ko mbaɗata: Bt cotton provides genetic resistance. Woto yejjito — spray neem kernel extract at flowering.",
+    "source": "ILRI/IAR Samaru, pest management advisory for cotton farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-082",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "tea",
+    "question": "Sannu. tea na suna da kananan kwari akan ganye. Me zan yi?",
+    "answer": "Reddish-brown discolouration of leaves with fine webbing indicates red spider mite (Oligonychus coffeae on tea). (1) Spray propargite at 1 ml/L OR fenazaquin at 1 ml/L ensuring thorough coverage of the underside of leaves. (2) Apply neem oil at 5 ml/L every 7 days. (3) Maintain shade — mites thrive in dry, hot, open conditions. (4) Rogue out heavily infested bushes. (5) Avoid broad-spectrum insecticides (especially synthetic pyrethroids) that kill predatory mites. Pre-plucking interval: 7 days.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-297",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "rice",
+    "question": "Sannu da aiki. shinkafa ta na da matsala — central shoot drying out — deadheart symptom. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "rice stem borer ne ke damun amfanin gonar ka. moth larvae bore into stem. Abin da za ka yi: apply carbofuran granules at panicle initiation. Kada ka manta — fields near wild grasses have higher infestation.",
+    "source": "NAERLS/ABU Zaria, pest management advisory for rice farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-792",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cotton",
+    "question": "Sannu. lawol am woodi caɗeele — larvae bore into bolls causing them to drop. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "cotton bollworm (Helicoverpa armigera) woni ko bonnata ndemri maa. polyphagous pest — also attacks tomato and maize. Ko mbaɗata: Bt cotton provides genetic resistance. Woto yejjito — spray neem kernel extract at flowering.",
+    "source": "ILRI/IAR Samaru, pest management advisory for cotton farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-234",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "oil palm",
+    "question": "Ututu oma. nkwu m nwere nsogbu — larvae tunnel into trunk weakening the tree. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "Nke a bụ ahụhụ a na-akpọ palm weevil (Rhynchophorus phoenicis). adults attracted to wounds on trunk. Ngwọta: avoid wounding trunk during pruning. Echefula — pheromone traps for monitoring.",
+    "source": "NRCRI-Umudike, pest management advisory for oil palm farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-678",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "groundnut",
+    "question": "Ezigbo ụbọchị. Achọrọ m ịmata otu m ga-esi groundnut planting n'ugbo akidi m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka groundnut planting na akidi: sow seeds 5cm deep. Nke a na-enyere aka n'ihi na space 60cm between rows, 15cm between plants. groundnut needs well-drained sandy loam soil.",
+    "source": "NRCRI Umudike, cultural practice advisory for groundnut farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-047",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cassava",
+    "question": "Eku oo, cassava mi ti n di ofeefee pelu awon abawon dudu. Kini mo le se?",
+    "answer": "This is cassava whitefly (Bemisia tabaci). Do NOT spray broad-spectrum insecticides — they kill natural enemies like Encarsia wasps and make outbreaks worse. Instead: (1) Spray insecticidal soap or 0.5% neem oil solution every 7 days for 3 weeks. (2) Remove and burn heavily infested leaves. (3) Plant maize or sorghum as barrier crops between cassava rows to disrupt whitefly movement. (4) Use yellow sticky traps (1 per 10 m²). If infestation persists, apply imidacloprid at 0.5 ml/L as a LAST resort, observing a 14-day pre-harvest interval. Wash hands and produce after application.",
+    "source": "NRCRI Extension Bulletin; reviewed agricultural literature",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-072",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "plantain",
+    "question": "Sannu. plantain na suna da kananan kwari akan ganye. Me zan yi?",
+    "answer": "Dark brown streaks that enlarge to black spots on leaves indicate Black Sigatoka (Mycosphaerella fijiensis). This disease can reduce yield by 50%+. (1) Remove and destroy all heavily infected leaves — do NOT leave them on the ground. (2) Spray propiconazole at 1 ml/L OR difenoconazole at 0.5 ml/L every 14-21 days during the rainy season. ALTERNATE fungicides to prevent resistance. (3) Improve drainage — standing water increases spore production. (4) Reduce planting density for better airflow (standard: 1,700 plants/ha; reduce to 1,400 if disease is severe). (5) De-leaf weekly, leaving only 8-10 functional leaves per plant.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-722",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cashew",
+    "question": "Ụtụtụ ọma. Ahụrụ m white powder on flowers and leaves na kashu m. Kedu ọrịa nke a bụ?",
+    "answer": "powdery mildew na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungus prevents fruit set. Ngwọta: spray sulfur fungicide. prune for good air circulation.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for cashew farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-197",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "maize",
+    "question": "E ku agba mi. Mo ri yellow streaks on leaves lori agbado mi. Arun wo ni eyi?",
+    "answer": "Eyi je arun ti a mo si maize streak virus (MSV). O n tan kaakiri nipase leafhoppers. virus has no cure once established. Ohun ti o ye ki o se: remove infected plants. virus has no cure once established.",
+    "source": "IAR&T-Ibadan, disease diagnosis advisory for maize farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-592",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sunflower",
+    "question": "E karo. Mo fe mo bi mo se le sunflower planting fun oko sunflower mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori sunflower planting fun sunflower: sow seeds 2-3cm deep. Eyi yoo se iranlowo nitori pe space 75cm between rows, 30cm between plants. sunflower needs full sun.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for sunflower farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-371",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cabbage",
+    "question": "Assalamu alaikum. Ina so in san yadda zan cabbage planting a aikin kabeji don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da cabbage planting a aikin kabeji: start seeds in nursery. Wannan yana taimakawa domin transplant after 4-5 weeks. space 45cm between plants.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for cabbage farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-883",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "beans",
+    "question": "Jam na. Mi yi'i angular brown spots on leaves e nyebbe am. Ɗume rafi woni ɗo'o?",
+    "answer": "angular leaf spot woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spread by rain splash. Nyawndam: use disease-free seed. rotate crops for 2 years.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for beans farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-907",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "banana",
+    "question": "Sannu. Mi yi'i leaves become narrow and bunched at top e ayaba am. Ɗume rafi woni ɗo'o?",
+    "answer": "banana bunchy top virus woni rafi bonnata ndemri maa. Ɗum saakitoo e aphid-transmitted, no cure. Nyawndam: uproot and destroy infected plants. use virus-free suckers from certified source.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for banana farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-634",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "tea",
+    "question": "Nnọọ. tii m nwere nsogbu — dark spots on leaves and young shoots. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "tea mosquito bug (Helopeltis antonii) na-akpata nsogbu n'ubi gị. bug pierces leaves and sucks sap. Ihe ị ga-eme: spray neem oil. Echefula — prune affected branches.",
+    "source": "NRCRI Umudike, pest management advisory for tea farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-644",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cassava",
+    "question": "Nnọọ. Ahụrụ m brown streaks inside tubers na akpu m. Kedu ọrịa nke a bụ?",
+    "answer": "cassava brown streak disease na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na spread by whiteflies and infected cuttings. Ngwọta: uproot and burn infected plants. makes tubers bitter and inedible.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for cassava farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-850",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "coffee",
+    "question": "A salaamun alaikum. Mi yi'i orange powdery dust on undersides of leaves e kofi am. Ɗume rafi woni ɗo'o?",
+    "answer": "coffee leaf rust (Hemileia vastatrix) woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spread by wind. Nyawndam: spray copper fungicide. plant resistant varieties.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for coffee farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-301",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "yam",
+    "question": "Assalamu alaikum. Na ga dark spots on leaves and vine dieback a jikin doya ta. Wace cuta ce wannan?",
+    "answer": "yam anthracnose (Colletotrichum gloeosporioides) ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus spreads in rainy season. Magani: use resistant variety TDr 95/19177. avoid planting in waterlogged soil.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for yam farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-566",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cassava",
+    "question": "Se dada ni. Mo ri wipe pakí mi ni leaves appear bunched and distorted. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "cassava mealybug (Phenacoccus manihoti) lo n damu oko re. mealybug sucks plant sap. Ohun ti o ye ki o se: release parasitic wasp Apoanagyrus lopezi for control. Ma gbagbe — significantly reduces tuber size.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for cassava farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-081",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cotton",
+    "question": "Ina fama da matsalar cotton ta. Ganyayyakin sun suna yin rawaya tare da bakaken tabo. Yaya zan magance wannan?",
+    "answer": "Angular, water-soaked spots on leaves that turn brown indicate bacterial blight (Xanthomonas spp.). (1) Spray copper oxychloride at 3 g/L + streptomycin at 0.3 g/L at first sign. (2) Avoid working in the field when plants are wet — bacteria spread through water. (3) Use only acid-delinted, certified seed. (4) Rotate with maize or sorghum for 2-3 years. (5) Remove and burn all crop residues after harvest. (6) Avoid excessive nitrogen which promotes lush, susceptible growth.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-388",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "mango",
+    "question": "Barka dai. Na ga dark spots on ripening fruit a jikin mangwaro ta. Wace cuta ce wannan?",
+    "answer": "anthracnose (Colletotrichum gloeosporioides) ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus spreads via rain splash. Magani: spray fungicide before harvest. hot water dip after harvest.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for mango farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-128",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "pepper",
+    "question": "Sannu da zuwa. barkono ta na da matsala — fruits rot from inside with maggots. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga pepper fruit fly. fly punctures fruit to lay eggs. Magani: harvest regularly before pest builds up. Kada ka manta — bag young fruits with paper.",
+    "source": "NAERLS-Zaria, pest management advisory for pepper farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-550",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sunflower",
+    "question": "Ek'abo. Mo fe mo bi mo se le sunflower planting fun oko sunflower mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori sunflower planting fun sunflower: sow seeds 2-3cm deep. Eyi yoo se iranlowo nitori pe space 75cm between rows, 30cm between plants. sunflower needs full sun.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for sunflower farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-471",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "millet",
+    "question": "Se dada ni. Mo ri yellow and white streaked leaves lori jero mi. Arun wo ni eyi?",
+    "answer": "downy mildew (Sclerospora graminicola) lo n ba oko re je. O n tan kaakiri nipa fungus spread by wind and rain. Itoju: use resistant varieties. rotate crops for 2 years.",
+    "source": "IAR&T Obafemi Awolowo University, disease diagnosis advisory for millet farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-748",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "watermelon",
+    "question": "Ezigbo ụbọchị. watermelon m nwere nsogbu — larvae inside fruit causing rot. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "melon fruit fly (Bactrocera cucurbitae) na-akpata nsogbu n'ubi gị. fly punctures fruit to lay eggs. Ihe ị ga-eme: cover young fruits with paper bags. Echefula — harvest early before pest builds up.",
+    "source": "NRCRI Umudike, pest management advisory for watermelon farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-045",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "watermelon",
+    "question": "Mo ni isoro pelu watermelon mi, awon ewe re ko dagba daradara, ewe re ti rerun. Jowo ran mi lowo.",
+    "answer": "Soft spots on fruit with small puncture marks and larvae (maggots) inside indicate fruit fly (Bactrocera / Ceratitis spp.). (1) Collect ALL fallen and infested fruit daily — place them in a sealed black plastic bag and leave in the sun for 7 days to kill larvae. (2) Use methyl eugenol pheromone traps (1 trap per 0.1 ha). (3) Apply GF-120 (Spinosad-based fruit fly bait) as spot sprays on a small patch of leaves — do NOT spray the fruit. (4) Bag individual fruits with paper bags when they reach half-size. (5) Plough the soil under the tree canopy to expose pupae. (6) NEVER use unapproved systemic insecticides on fruit crops.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-827",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "beans",
+    "question": "Sannu. Miɗo yiɗi anndude no mi waɗirta bean planting e ndemri nyebbe am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow bean planting e nyebbe: sow seeds 3-5cm deep. Ɗum wallitata sabo space 50cm between rows, 10cm between plants. beans fix nitrogen in soil.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for beans farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-271",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "sunflower",
+    "question": "Odidẹ (sunflower) mi ko so eso daradara. Kini iṣoro?",
+    "answer": "Odidẹ ti ko so eso daradara nitori pollination kiko. (1) Fi awọn apata oyin (beehives) nitosi oko — oyin n ran lọwọ pollination. (2) Ma lo insecticide nigbati odidẹ ba n ta — eyi n pa awọn kòkòrò ọ̀rẹ́. (3) Odidẹ nilo omi pupọ nigbati o ba n ta eso. (4) Lo NPK ajile (10:20:10). (5) Gbin ni akoko ti o tọ — Kínní sí Márí. (6) Kan si oṣiṣẹ iṣẹ-ogbin fun imọran diẹ sii.",
+    "source": "NAERLS Sunflower Guide; ICRISAT Pollination Advisory",
+    "category": "general inquiry"
+  },
+  {
+    "id": "agri-619",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "sorghum",
+    "question": "Nnọọ. sorghum m nwere nsogbu — deadheart in young seedlings. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "sorghum shoot fly (Atherigona soccata) na-akpata nsogbu n'ubi gị. flies lay eggs on young leaves. Ihe ị ga-eme: plant early to escape peak fly season. Echefula — use resistant variety SAMSORG 40.",
+    "source": "NRCRI Umudike, pest management advisory for sorghum farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-353",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "rice",
+    "question": "Barka dai. Ina so in san yadda zan water management a aikin shinkafa don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da water management a aikin shinkafa: maintain 2-5cm water depth during tillering. Wannan yana taimakawa domin drain field 10 days before harvest. alternate wetting and drying saves water without yield loss.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for rice farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-868",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "watermelon",
+    "question": "Jam na. Mi yi'i dark spots on fruit and leaves e kankana am. Ɗume rafi woni ɗo'o?",
+    "answer": "anthracnose woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spread by rain splash. Nyawndam: spray fungicide at flowering. rotate crops.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for watermelon farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-368",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "coffee",
+    "question": "Barka dai. Ina so in san yadda zan coffee maintenance a aikin kofi don in samu riba mai kyau. Me za ku ce?",
+    "answer": "Ga shawarata game da coffee maintenance a aikin kofi: prune old branches. Wannan yana taimakawa domin apply organic fertilizer annually. maintain good shade cover.",
+    "source": "NAERLS/ABU Zaria, cultural practice advisory for coffee farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-100",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "onion",
+    "question": "Daalunu. onion m na-acha odo odo na ntụpọ ojii. Gini ka m ga-eme?",
+    "answer": "Soft, rotting bulb base with white fungal growth indicates basal rot (Fusarium oxysporum f. sp. cepae). (1) Remove and destroy affected plants — do NOT store bulbs from infected rows. (2) Treat seed bulbs with Trichoderma viride (10 g/kg seed) before planting. (3) Avoid injury to bulbs during weeding. (4) Harvest when 50% of tops have fallen and cure bulbs in the sun for 7-10 days. (5) Store in a cool, dry, well-ventilated place. (6) Rotate away from alliums for 4 years.",
+    "source": "NRCRI Extension Bulletin; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-390",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "pepper",
+    "question": "Sannu. barkono ta na da matsala — fruits rot from inside with maggots. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "pepper fruit fly (Bactrocera latifrons) ne ke damun amfanin gonar ka. fly punctures fruit to lay eggs. Abin da za ka yi: harvest regularly before pest builds up. Kada ka manta — bag young fruits with paper.",
+    "source": "NAERLS/ABU Zaria, pest management advisory for pepper farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-095",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cocoa",
+    "question": "Daalunu. cocoa m anaghị eto nke ọma, akwukwo na-akpọnwụ. Gini ka m ga-eme?",
+    "answer": "Sunken, black lesions on young shoots and pods indicate mirids/capsids (Sahlbergella singularis). (1) Spray imidacloprid at 0.5 ml/L OR bifenthrin at 1 ml/L, targeting the canopy thoroughly. (2) Remove and burn heavily damaged shoots and pods. (3) Maintain adequate canopy shade — mirids prefer open, exposed canopies. (4) Avoid excessive pruning that exposes the tree interior. (5) Monitor weekly with a beating tray or by tapping branches over a white cloth to count insects. Treat when you find >4 mirids per 10 taps.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-991",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "beans",
+    "question": "Mbaaɗa. Mi yi'i angular brown spots on leaves e nyebbe am. Ɗume rafi woni ɗo'o?",
+    "answer": "angular leaf spot woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus spread by rain splash. Nyawndam: use disease-free seed. rotate crops for 2 years.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for beans farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-345",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cashew",
+    "question": "Sannu. kanju ta na da matsala — dead branches and holes in bark. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "cashew stem girdler ne ke damun amfanin gonar ka. beetle girdles branches. Abin da za ka yi: prune affected branches. Kada ka manta — maintain field cleanliness.",
+    "source": "NAERLS/ABU Zaria, pest management advisory for cashew farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-782",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "plantain",
+    "question": "Sannu. Miɗo yiɗi anndude no mi waɗirta plantain planting e ndemri ayaba am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow plantain planting e ayaba: use healthy suckers from reliable source. Ɗum wallitata sabo space 3m between plants. apply mulch to conserve moisture.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for plantain farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-221",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "mango",
+    "question": "E ku ise o. Mo ri white powdery coating on flowers and young fruit lori mangoro mi. Arun wo ni eyi?",
+    "answer": "Eyi je arun ti a mo si powdery mildew. O n tan kaakiri nipase fungus loves warm humid air. prune for good air circulation. Ohun ti o ye ki o se: spray sulfur-based fungicide at flowering. prune for good air circulation.",
+    "source": "IAR&T-Ibadan, disease diagnosis advisory for mango farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-160",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "cassava",
+    "question": "Ina kwana. rogo ta na da matsala — yellow speckling on leaves. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga cassava green mite (Mononychellus tanajoa). mites spread in dry season. Magani: neem oil spray or acaricide. Kada ka manta — severe infestation reduces root yield by 60%.",
+    "source": "NAERLS-Zaria, pest management advisory for cassava farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-965",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cashew",
+    "question": "A salaamun alaikum. Miɗo yiɗi anndude no mi waɗirta cashew planting e ndemri kasu am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow cashew planting e kasu: plant trees 10m apart. Ɗum wallitata sabo apply organic fertilizer. prune dead branches regularly.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for cashew farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-349",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "sunflower",
+    "question": "Ina kwana. Na ga yellow leaves with white underside a jikin sunflower ta. Wace cuta ce wannan?",
+    "answer": "downy mildew ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus survives in soil. Magani: use resistant varieties. rotate crops for 3 years.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for sunflower farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-984",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cotton",
+    "question": "No wa'i. lawol am woodi caɗeele — larvae bore into bolls causing them to drop. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "cotton bollworm (Helicoverpa armigera) woni ko bonnata ndemri maa. polyphagous pest — also attacks tomato and maize. Ko mbaɗata: Bt cotton provides genetic resistance. Woto yejjito — spray neem kernel extract at flowering.",
+    "source": "ILRI/IAR Samaru, pest management advisory for cotton farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-715",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "oil palm",
+    "question": "Ndewo. nkwu m nwere nsogbu — larvae tunnel into trunk weakening the tree. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "palm weevil (Rhynchophorus phoenicis) na-akpata nsogbu n'ubi gị. adults attracted to wounds on trunk. Ihe ị ga-eme: avoid wounding trunk during pruning. Echefula — pheromone traps for monitoring.",
+    "source": "NRCRI Umudike, pest management advisory for oil palm farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-164",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "oil palm",
+    "question": "Barka da rana. dabino ta na da matsala — larvae tunnel into trunk weakening the tree. Wane irin kwaro ne wannan kuma me zan yi?",
+    "answer": "Wannan matsala ce daga palm weevil (Rhynchophorus phoenicis). adults attracted to wounds on trunk. Magani: avoid wounding trunk during pruning. Kada ka manta — pheromone traps for monitoring.",
+    "source": "NAERLS-Zaria, pest management advisory for oil palm farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-826",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "cashew",
+    "question": "Mbaaɗa. Mi yi'i white powder on flowers and leaves e kasu am. Ɗume rafi woni ɗo'o?",
+    "answer": "powdery mildew woni rafi bonnata ndemri maa. Ɗum saakitoo e fungus prevents fruit set. Nyawndam: spray sulfur fungicide. prune for good air circulation.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for cashew farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-778",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "tomato",
+    "question": "Jam na. Mi yi'i plants suddenly wilt and die e tumate am. Ɗume rafi woni ɗo'o?",
+    "answer": "bacterial wilt (Ralstonia solanacearum) woni rafi bonnata ndemri maa. Ɗum saakitoo e bacteria persist in soil. Nyawndam: rotate crops for 3-4 years. plant resistant varieties.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for tomato farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-007",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "sorghum",
+    "question": "Daalunu. Osisi sorghum m are showing signs of downy mildew. Gini ka m gba mee?",
+    "answer": "Nke a bụ ahụhụ sorghum shoot fly. Ijiji na-eyikwa akwa n'elu akwụkwọ na-eto eto, igwe ya na-abanyekwa n'ime ahịhịa. Ngwọta: kụọ n'oge tupu oge ijiji eruo elu, ma ọ bụ jiri ụdị dị ike dịka SAMSORG 40.",
+    "source": "NAERLS-Extension, pest/disease advisory for sorghum farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-891",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "yam",
+    "question": "Mbaaɗa. dundu am woodi caɗeele — holes bored into tubers reducing market value. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "yam beetle (Heteroligus meles) woni ko bonnata ndemri maa. adult beetles feed at night. Ko mbaɗata: deep planting (15cm) reduces damage. Woto yejjito — mulching with neem leaves repels beetles.",
+    "source": "ILRI/IAR Samaru, pest management advisory for yam farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-829",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "sorghum",
+    "question": "No wa'i. Mi yi'i discolored grains with fungal growth e mbayeeri am. Ɗume rafi woni ɗo'o?",
+    "answer": "grain mold woni rafi bonnata ndemri maa. Ɗum saakitoo e high humidity at grain filling stage. Nyawndam: harvest at physiological maturity. dry grains to 12% moisture immediately.",
+    "source": "ILRI/IAR Samaru, disease diagnosis advisory for sorghum farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-285",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "sunflower",
+    "question": "Furen rana na da tsutsotsi a cikin furen. Magani?",
+    "answer": "Tsutsotsin cikin furen rana (sunflower head borer) na lalata iri. (1) Cire furannin da suka lalace — kona su. (2) Shuka da wuri kafin tsutsotsi su yawaita. (3) Yi amfani da neem oil (5ml/lita) a jikin furen. (4) Juya amfanin gona — kada a shuka furen rana a gona guda. (5) Yi amfani da iri masu jurewa: 'PAN 7031', 'Hysun 38'. (6) Tuntuɓi jami'in noma don shawara.",
+    "source": "NAERLS Sunflower Borer Guide; ICRISAT Head Borer Control",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-604",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "coffee",
+    "question": "Nnọọ. kofi m nwere nsogbu — small holes in coffee berries with damage inside. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "coffee berry borer (Hypothenemus hampei) na-akpata nsogbu n'ubi gị. most serious coffee pest globally. Ihe ị ga-eme: harvest all ripe berries promptly. Echefula — use broca traps with ethanol-methanol mix.",
+    "source": "NRCRI Umudike, pest management advisory for coffee farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-460",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "groundnut",
+    "question": "Ek'abo. Mo fe mo bi mo se le groundnut planting fun oko epa mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori groundnut planting fun epa: sow seeds 5cm deep. Eyi yoo se iranlowo nitori pe space 60cm between rows, 15cm between plants. groundnut needs well-drained sandy loam soil.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for groundnut farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-226",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "amaranth",
+    "question": "Daalu nu. green m nwere nsogbu — caterpillar webs leaves together and feeds inside. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "Nke a bụ ahụhụ a na-akpọ amaranth leaf webber. pest of leafy amaranth vegetables. Ngwọta: hand-pick and destroy webbed leaves. Echefula — neem spray prevents egg laying.",
+    "source": "NRCRI-Umudike, pest management advisory for amaranth farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-430",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "sweet potato",
+    "question": "Sannu. Na ga yellow stunted leaves a jikin dankali ta. Wace cuta ce wannan?",
+    "answer": "sweet potato virus disease (SPVD) ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar spread by whiteflies and aphids. Magani: use virus-free vines. remove infected plants.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for sweet potato farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-987",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "banana",
+    "question": "Sannu. ayaba am woodi caɗeele — curled leaves with aphids underneath. Ɗume ñoɓɓere woni ndee, ɗume mbaɗata?",
+    "answer": "banana aphid (Pentalonia nigronervosa) woni ko bonnata ndemri maa. aphids transmit bunchy top virus. Ko mbaɗata: spray insecticidal soap. Woto yejjito — remove infected plants.",
+    "source": "ILRI/IAR Samaru, pest management advisory for banana farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-719",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cabbage",
+    "question": "Nnọọ. Ahụrụ m yellow leaves with V-shaped lesions na kabeji m. Kedu ọrịa nke a bụ?",
+    "answer": "black rot (Xanthomonas campestris) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na bacteria spread by water. Ngwọta: use disease-free seed. rotate crops for 3 years.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for cabbage farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-666",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cashew",
+    "question": "Kedu. Achọrọ m ịmata otu m ga-esi cashew planting n'ugbo kashu m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka cashew planting na kashu: plant trees 10m apart. Nke a na-enyere aka n'ihi na apply organic fertilizer. prune dead branches regularly.",
+    "source": "NRCRI Umudike, cultural practice advisory for cashew farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-734",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "groundnut",
+    "question": "Nnọọ. Ahụrụ m brown spots on leaves na akidi m. Kedu ọrịa nke a bụ?",
+    "answer": "early leaf spot (Cercospora arachidicola) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungus survives in crop residue. Ngwọta: spray fungicide at first appearance. rotate crops for 2 years.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for groundnut farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-204",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "amaranth",
+    "question": "Bawo ni o. Mo ri wipe tete mi ni caterpillar webs leaves together and feeds inside. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "Eyi je kokoro ti a n pe ni amaranth leaf webber. pest of leafy amaranth vegetables. Ogba: hand-pick and destroy webbed leaves. Mase gbagbe pe — neem spray prevents egg laying.",
+    "source": "IAR&T-Ibadan, pest management advisory for amaranth farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-575",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "beans",
+    "question": "Ek'abo. Mo ri wipe ere mi ni stunted plants with yellow leaves. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "bean fly (Ophiomyia phaseoli) lo n damu oko re. fly larvae bore into stems. Ohun ti o ye ki o se: plant early to escape peak fly season. Ma gbagbe — apply mulch around plants.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for beans farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-028",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "groundnut",
+    "question": "Eku agba mi, groundnut mi ni awon kokoro funfun lori ewe. Kini o ye ki n se nitori ki n le gba ikore?",
+    "answer": "Orange-brown powdery pustules on leaves indicate rust (Puccinia spp.). (1) Spray propiconazole at 1 ml/L OR tebuconazole at 0.5 ml/L at first sign. (2) Plant resistant varieties where available. (3) Avoid excessive nitrogen — it promotes lush, susceptible growth. (4) Remove and destroy crop residues after harvest. (5) Practice early planting to avoid peak rust season. (6) Apply balanced NPK (not just urea) to strengthen cell walls.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-617",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "rice",
+    "question": "Ụtụtụ ọma. Ahụrụ m diamond-shaped gray lesions on leaves na osikapa m. Kedu ọrịa nke a bụ?",
+    "answer": "rice blast (Pyricularia oryzae) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungal spores carried by wind. Ngwọta: use resistant varieties like FARO 44. excess nitrogen makes blast worse.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for rice farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-518",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "watermelon",
+    "question": "E ku ise. Mo ri wipe gbogiri mi ni larvae inside fruit causing rot. Iru kokoro wo ni eyi ati kini mo le se?",
+    "answer": "melon fruit fly (Bactrocera cucurbitae) lo n damu oko re. fly punctures fruit to lay eggs. Ohun ti o ye ki o se: cover young fruits with paper bags. Ma gbagbe — harvest early before pest builds up.",
+    "source": "IAR&T Obafemi Awolowo University, pest management advisory for watermelon farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-239",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "tea",
+    "question": "Ututu oma. tii m nwere nsogbu — shoot tips wilt and die back. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "Nke a bụ ahụhụ a na-akpọ tea mosquito bug. bug injects toxin during feeding. Ngwọta: shade regulation reduces population. Echefula — neem-based sprays for organic control.",
+    "source": "NRCRI-Umudike, pest management advisory for tea farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-224",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "tomato",
+    "question": "Bawo ni o. Mo ri dark greasy spots on leaves and fruit rot lori tomatii mi. Arun wo ni eyi?",
+    "answer": "Eyi je arun ti a mo si late blight (Phytophthora infestans). O n tan kaakiri nipase fungus thrives in cool wet weather. rotate tomatoes away from potato fields. Ohun ti o ye ki o se: spray mancozeb preventively. rotate tomatoes away from potato fields.",
+    "source": "IAR&T-Ibadan, disease diagnosis advisory for tomato farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-096",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "plantain",
+    "question": "Daalunu. plantain m na-acha odo odo na ntụpọ ojii. Gini ka m ga-eme?",
+    "answer": "Holes at the base of the pseudostem and wilting plants indicate banana/plantain weevil borer (Cosmopolites sordidus). (1) Set up pseudostem traps: cut a 30 cm piece of harvested stem, split it lengthwise, and place it cut-side down near the plant. Check and destroy trapped weevils every 2 days. (2) Apply neem cake at 100 g per plant around the base. (3) Remove old, harvested stems at ground level — they are breeding sites. (4) For heavy infestation, drench the soil around the base with chlorpyrifos at 2 ml/L (wear gloves and avoid runoff into water sources). (5) Use clean, weevil-free suckers for the next planting.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-031",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "plantain",
+    "question": "Mo ni isoro pelu plantain mi, awon ewe re ko dagba daradara, ewe re ti rerun. Jowo ran mi lowo.",
+    "answer": "Stunted growth, yellowing, swollen root galls (knots), and wilting despite moist soil indicate root-knot nematodes (Meloidogyne spp.). (1) There is no curative chemical treatment. (2) Incorporate fresh neem leaves or neem cake at 500 kg/ha into the soil 2 weeks before the next planting. (3) Solarize the soil with clear plastic for 4-6 weeks. (4) Plant marigold (Tagetes erecta) as a trap crop — its roots release natural nematicides. (5) Rotate with maize, sorghum, or millet for 2-3 seasons — these are non-hosts. (6) Apply well-composted manure at 5 t/ha; the microbial activity suppresses nematodes.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-033",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "banana",
+    "question": "Mo ni isoro pelu banana mi, awon ewe re ti n di ofeefee pelu awon abawon dudu. Jowo ran mi lowo.",
+    "answer": "Stunted growth, yellowing, swollen root galls (knots), and wilting despite moist soil indicate root-knot nematodes (Meloidogyne spp.). (1) There is no curative chemical treatment. (2) Incorporate fresh neem leaves or neem cake at 500 kg/ha into the soil 2 weeks before the next planting. (3) Solarize the soil with clear plastic for 4-6 weeks. (4) Plant marigold (Tagetes erecta) as a trap crop — its roots release natural nematicides. (5) Rotate with maize, sorghum, or millet for 2-3 seasons — these are non-hosts. (6) Apply well-composted manure at 5 t/ha; the microbial activity suppresses nematodes.",
+    "source": "NRCRI Extension Bulletin; reviewed agricultural literature",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-433",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "sunflower",
+    "question": "Barka dai. Na ga yellow leaves with white underside a jikin sunflower ta. Wace cuta ce wannan?",
+    "answer": "downy mildew ce ke cutar amfanin gonar ka. Tana yaduwa ta hanyar fungus survives in soil. Magani: use resistant varieties. rotate crops for 3 years.",
+    "source": "NAERLS/ABU Zaria, disease diagnosis advisory for sunflower farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-605",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "banana",
+    "question": "Ndewo. Ahụrụ m leaves become narrow and bunched at top na unere m. Kedu ọrịa nke a bụ?",
+    "answer": "banana bunchy top virus na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na aphid-transmitted, no cure. Ngwọta: uproot and destroy infected plants. use virus-free suckers from certified source.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for banana farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-090",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "rice",
+    "question": "Nnukwu m, akwukwo rice m na-acha odo odo na ntụpọ ojii. Biko nyere m aka.",
+    "answer": "Oval brown spots on leaves indicate brown spot (Cochliobolus miyabeanus), often associated with nutrient deficiency, especially silicon. (1) Apply potassium silicate at 2 ml/L foliar spray — this strengthens leaf cell walls. (2) Apply balanced NPK (15-15-15) at 200 kg/ha if the crop appears yellowish overall. (3) Spray propiconazole at 1 ml/L if spots cover >10% of leaf area. (4) Avoid water stress — maintain 2-5 cm standing water. (5) For the next season, incorporate rice husks into the soil to increase silicon availability.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-559",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "banana",
+    "question": "Bawo ni. Mo fe mo bi mo se le banana planting fun oko ogede mi. Kini imoran re?",
+    "answer": "Eyi ni imoran mi lori banana planting fun ogede: plant healthy suckers 30cm deep. Eyi yoo se iranlowo nitori pe space 3m between plants. water regularly during dry season.",
+    "source": "IAR&T Obafemi Awolowo University, cultural practice advisory for banana farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-914",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "groundnut",
+    "question": "No wa'i. Miɗo yiɗi anndude no mi waɗirta groundnut planting e ndemri biriiji am. Ɗume wasiyiiji maa?",
+    "answer": "Wasiyanke am dow groundnut planting e biriiji: sow seeds 5cm deep. Ɗum wallitata sabo space 60cm between rows, 15cm between plants. groundnut needs well-drained sandy loam soil.",
+    "source": "ILRI/IAR Samaru, cultural practice advisory for groundnut farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-759",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "okra",
+    "question": "Nnọọ. Achọrọ m ịmata otu m ga-esi okra planting n'ugbo okwuru m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka okra planting na okwuru: sow seeds 2-3cm deep. Nke a na-enyere aka n'ihi na space 60cm between rows, 30cm between plants. okra needs full sun and well-drained soil.",
+    "source": "NRCRI Umudike, cultural practice advisory for okra farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-693",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "amaranth",
+    "question": "Ezigbo ụbọchị. Achọrọ m ịmata otu m ga-esi amaranth planting n'ugbo green m. Gịnị ka ị ga-adụ m ọdụ?",
+    "answer": "Nke a bụ ndụmọdụ m maka amaranth planting na green: broadcast seeds on prepared bed. Nke a na-enyere aka n'ihi na water regularly. harvest after 4-6 weeks.",
+    "source": "NRCRI Umudike, cultural practice advisory for amaranth farmers",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-105",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cotton",
+    "question": "Nnukwu m, akwukwo cotton m anaghị eto nke ọma, akwukwo na-akpọnwụ. Biko nyere m aka.",
+    "answer": "Yellowing leaves that wilt during the day and internal stem browning indicate Fusarium wilt (Fusarium oxysporum). Once a plant shows symptoms, it cannot be saved. (1) Uproot and burn the affected plant with its root ball — do NOT compost. (2) Drench the planting hole with Trichoderma viride (10 g/L) + lime (50 g/hole). (3) Do NOT plant susceptible crops in that spot for 3-4 years — rotate with maize or rice. (4) Solarize the soil during the hottest months. (5) Use resistant varieties (FHIA series for banana). (6) Always use tissue-culture plantlets or certified disease-free suckers for new plantings — the fungus persists in infected planting material.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-755",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "plantain",
+    "question": "Ndewo. Ahụrụ m dark streaks on leaves reducing photosynthesis na ogidi m. Kedu ọrịa nke a bụ?",
+    "answer": "black sigatoka (Mycosphaerella fijiensis) na-emebi ihe ọkụkụ gị. Ọ na-agbasa site na fungus spread by wind. Ngwọta: spray fungicide regularly. remove infected leaves.",
+    "source": "NRCRI Umudike, disease diagnosis advisory for plantain farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-143",
+    "region": "Nigeria",
+    "dialect": "Hausa",
+    "crop": "watermelon",
+    "question": "Sannu da zuwa. Na ga white powder on leaves reducing photosynthesis a jikin kankana ta. Wace cuta ce wannan?",
+    "answer": "Wannan cuta ce da ake kira powdery mildew on watermelon. Yana yaduwa ta hanyar thrives in dry warm weather. plant resistant hybrid varieties. Abin yi: sulfur spray at first sign. plant resistant hybrid varieties.",
+    "source": "NAERLS-Zaria, disease diagnosis advisory for watermelon farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-229",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "cashew",
+    "question": "Ututu oma. kashu m nwere nsogbu — grub bores into trunk causing branch dieback. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "Nke a bụ ahụhụ a na-akpọ cashew stem borer. entry holes with frass visible. Ngwọta: inject neem oil into bore holes. Echefula — keep trees healthy with organic mulch.",
+    "source": "NRCRI-Umudike, pest management advisory for cashew farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-251",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "maize",
+    "question": "Daalu o. Ahụrụ m rectangular gray spots on lower leaves na oka m. Kedu ọrịa nke a bụ?",
+    "answer": "Nke a bụ ọrịa a na-akpọ gray leaf spot. Ọ na-agbasa site na fungal spores in soil debris. thrives in warm humid conditions. Ihe ị ga-eme: fungicide spray (mancozeb). thrives in warm humid conditions.",
+    "source": "NRCRI-Umudike, disease diagnosis advisory for maize farmers",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-282",
+    "region": "Nigeria",
+    "dialect": "Fulfulde",
+    "crop": "maize",
+    "question": "Makkabe am na markooje (lodging). Ko waɗi?",
+    "answer": "Makkabe ɗe markooje ko stem borers mbaɗi. (1) Lartu makkabe ɗe markii — suna. (2) Demoo ko adii — borers ɗen keƴaako. (3) Luurtin ndema — woto a demoo makkabe e ngesa goota hitaande fof. (4) Demoo gabbe ɗe ngooɗata: 'SC 403', 'MH 30'. (5) Huutoro neem oil (5ml/lita) nder makka. (6) Yeewtu e ADP ngam insecticide approved.",
+    "source": "ADP Maize Borer Guide; CIMMYT Borer Management",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-760",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "pepper",
+    "question": "Ndewo. ose m nwere nsogbu — fruits rot from inside with maggots. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "pepper fruit fly (Bactrocera latifrons) na-akpata nsogbu n'ubi gị. fly punctures fruit to lay eggs. Ihe ị ga-eme: harvest regularly before pest builds up. Echefula — bag young fruits with paper.",
+    "source": "NRCRI Umudike, pest management advisory for pepper farmers",
+    "category": "pest management"
+  },
+  {
+    "id": "agri-026",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "cowpea",
+    "question": "Eku oo, cowpea mi ti n di ofeefee pelu awon abawon dudu. Kini mo le se?",
+    "answer": "Small black or pale green insects clustered on stems and young growth are aphids. They suck sap and can transmit viruses. (1) Spray insecticidal soap (5 ml liquid soap in 1 L water) directly on the insects every 3 days. (2) Strong water spray can dislodge light infestations. (3) Apply neem oil at 5 ml/L. (4) Encourage natural enemies: ladybirds (ladybugs), lacewings, and hoverflies — plant marigold or coriander near cowpea to attract them. (5) If infestation is severe and ants are present (ants farm aphids), apply imidacloprid at 0.5 ml/L. Remove ants with a sticky barrier around plant stems first.",
+    "source": "IITA Crop Management Guide; reviewed agricultural literature",
+    "category": "disease diagnosis"
+  },
+  {
+    "id": "agri-115",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "rice",
+    "question": "Nnukwu m, akwukwo rice m anaghị eto nke ọma, akwukwo na-akpọnwụ. Biko nyere m aka.",
+    "answer": "Bronze-orange discolouration of older leaves (\"bronzing\") indicates iron toxicity, common in waterlogged, acidic soils. (1) Drain the field for 3-5 days to aerate the soil — this allows iron to precipitate out of the soil solution. (2) Apply lime (2-4 t/ha) to raise soil pH above 5.0. (3) Use NPK 15-15-15 fertiliser rather than single-nutrient fertilisers — potassium helps reduce iron uptake. (4) Plant tolerant varieties: NERICA-L series or TOX 4004. (5) In the next season, avoid continuous flooding of young seedlings; use alternate wetting and drying irrigation.",
+    "source": "FAO Agricultural Guidelines, 2024; reviewed agricultural literature",
+    "category": "cultural practice"
+  },
+  {
+    "id": "agri-655",
+    "region": "Nigeria",
+    "dialect": "Igbo",
+    "crop": "pepper",
+    "question": "Ndewo. ose m nwere nsogbu — fruits rot from inside with maggots. Kedu ụdị ahụhụ nke a bụ, gịnị ka m ga-eme?",
+    "answer": "pepper fruit fly (Bactrocera latifrons) na-akpata nsogbu n'ubi gị. fly punctures fruit to lay eggs. Ihe ị ga-eme: harvest regularly before pest builds up. Echefula — bag young fruits with paper.",
+    "source": "NRCRI Umudike, pest management advisory for pepper farmers",
+    "category": "pest management"
+  }
+]

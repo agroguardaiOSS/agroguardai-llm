@@ -37,7 +37,7 @@
   "presets": {
     "llama3-8b": {
       "model_name": "meta-llama/Meta-Llama-3-8B",
-      "description": "24+ GB VRAM required (A100, A10G). Flash-attn-2 enabled. ~30\u201345 min on A100.",
+      "description": "24+ GB VRAM required (A100, A10G). Flash-attn-2 enabled. ~30–45 min on A100.",
       "num_epochs": 3,
       "per_device_train_batch_size": 4,
       "gradient_accumulation_steps": 8,
@@ -66,12 +66,12 @@
   },
   "notes": "Launch with: python scripts/finetune_llama3.py --model-family llama3-3b --output ./models/llama3-agricultural-qlora. Override any field via CLI (--lora-r 64 --epochs 10).",
   "dataset_stats": {
-    "entries": 815,
+    "entries": 1004,
     "crops": 28,
     "dialects": 19,
     "regions": 9,
-    "train_split": "~734 (90%)",
-    "val_split": "~81 (10%)",
-    "last_updated": "2026-06-08"
+    "train_split": "~904 (90%)",
+    "val_split": "~100 (10%)",
+    "last_updated": "2026-07-29"
   }
-}
+    }

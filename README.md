@@ -1,59 +1,56 @@
-# AgroguardAI-LLM
+# AgroguardAI‑LLM
 
 <p align="center">
-  <strong>An open-source agricultural LLM that understands local dialects, crop science, and soil health — built because generic AI kills farmers.</strong>
+  <strong>An open‑source agricultural LLM that bring safety in Agriculture  — built because generic AI gives farmers dangerous advice.</strong>
 </p>
 
 ---
 
 ## Why This Exists
 
-Farmers in rural Nigeria, India, Kenya, and across the Global South rely on AI chatbots for
-agronomic advice. The problem: **GPT-5, Claude, Grok, DeepSeek, and Gemini hallucinate
-dangerously when asked about local crops, pests, and soil conditions.** They recommend
-fertilizers unavailable in the region, misdiagnose cassava mosaic virus as potato blight,
-prescribe banned pesticides, and fail to understand Hausa, Yoruba, Igbo, Swahili, or Pidgin.
+Smallholder farmers in Nigeria rely on AI chatbots for agronomic advice.  
+The problem: **GPT‑5, Claude, Grok, DeepSeek, and Gemini hallucinate
+dangerously when asked about local crops, pests, and soil conditions.**  
+They recommend unavailable fertilisers, misdiagnose cassava mosaic, prescribe
+banned pesticides, and fail completely on Hausa, Igbo, Yoruba, and Fulfulde.
 
-**One wrong answer can destroy a season's harvest — or poison a community.**
+**One wrong answer can destroy a season’s harvest — or poison a community.**
 
-AgroguardAI-LLM is a fine-tuned language model purpose-built for agriculture. It speaks local
-dialects, knows the difference between maize streak virus and nitrogen deficiency, and returns
-*refuse-to-answer* instead of guessing when it lacks evidence. No hallucinations. No generic
-WebMD-for-plants nonsense. Just safe, grounded, farmer-first advice.
+AgroguardAI‑LLM is a fine‑tuned language model purpose‑built for Nigerian agriculture.
+It speaks the farmer’s language, knows the difference between maize streak virus
+and nitrogen deficiency, and refuses to answer when it lacks evidence.
+No hallucinations. No generic advice. Just safe, grounded, farmer‑first help.
 
-## What's Inside
+## What’s Inside
 
 ```
+
 agroguardai-llm/
-├── README.md                  ← You are here
-├── LICENSE                    ← Apache 2.0
-├── requirements.txt           ← All Python dependencies
-├── .gitignore                 ← Python + Hugging Face + model artefacts
+├── README.md                      ← You are here
+├── LICENSE                        ← Apache 2.0
+├── requirements.txt
+├── .gitignore
 ├── .github/workflows/
-│   └── validate-qa.yml        ← CI: validates dataset schema & safety on every PR
-├── config/
-│   └── lora_config.yaml       ← LoRA hyperparameters (r, alpha, dropout, target modules)
+│   └── validate-qa.yml            ← CI: validates dataset schema & safety on every PR
+├── configs/
+│   └── llama3_qlora_v1.json       ← QLoRA config (presets for 3B / 8B)
 ├── data/
-│   ├── README.md              ← Data collection logbook
-│   ├── CONTRIBUTING.md        ← Contributor guide: how to write great QA pairs
-│   ├── qa_template.json       ← Copy-paste template with worked examples
-│   ├── agri_qa.json           ← 500 farmer Q&A pairs in 12 dialects
-│   └── processed/             ← Tokenized datasets land here (gitignored)
+│   ├── README.md
+│   ├── CONTRIBUTING.md
+│   ├── qa_template.json
+│   ├── agri_qa.json               ← full dataset (Nigeria‑only after cleaning)
+│   ├── agri_qa_nigeria.json       ← filtered & deduplicated Nigeria‑only dataset
+│   └── processed/                 ← tokenized train/test splits
 ├── notebooks/
-│   └── colab_train.ipynb      ← One-click Colab training notebook (free T4 GPU)
-├── src/
-│   ├── preprocess.py          ← Format → tokenize → push to Hub
-│   ├── train.py               ← QLoRA fine-tuning (Mistral-7B / TinyLlama)
-│   ├── inference.py           ← Load LoRA adapter → answer farmer questions
-│   ├── evaluate.py            ← Side-by-side eval against GPT-5, Claude, etc.
-│   └── validate.py            ← QA pair validator (schema, safety, dialect, banned pesticides)
+│   └── colab_train.ipynb          ← one‑click training on free T4 GPU
 ├── scripts/
-│   ├── train.sh               ← One-command training entrypoint
-│   ├── inference.sh           ← Interactive inference shell
-│   ├── evaluate.sh            ← Run the full cross-model benchmark
-│   └── generate_dataset.py    ← Synthetic dataset expansion tool
-└── models/
-    └── .gitkeep               ← Downloaded base models & saved adapters
+│   ├── finetune_llama3.py         ← QLoRA fine‑tuning (Llama‑3‑3B / 8B)
+│   ├── evaluate_nigeria.py        ← safety, dialect, hallucination benchmark
+│   ├── preprocess.py
+│   ├── validate.py
+│   └── generate_dataset.py
+└── models/                        ← saved LoRA adapters & checkpoints
+
 ```
 
 ## Quick Start
@@ -63,136 +60,118 @@ agroguardai-llm/
 ```bash
 git clone https://github.com/agroguardaiaOS/agroguardai-llm.git
 cd agroguardai-llm
-python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Inference (use a pre-trained LoRA adapter)
+2. Inference
+
+After training, you can load the LoRA adapter:
 
 ```bash
-# Downloads Mistral-7B + your adapter, starts a REPL
-bash scripts/inference.sh
+python scripts/finetune_llama3.py --help   # see all options
 ```
 
-Or programmatically:
+3. Train on a free T4 GPU (Colab)
 
-```python
-from src.inference import AgroguardInference
+https://colab.research.google.com/assets/colab-badge.svg
 
-model = AgroguardInference(
-    base_model="mistralai/Mistral-7B-Instruct-v0.3",
-    adapter_path="agroguardaiaOS/agroguardai-llm-lora",  # your Hugging Face repo
-)
-answer = model.ask("My tomato leaf get black spot for underside. Wetin I fit do?")
-print(answer)
-```
+The notebook:
 
-### 3. Train on GPU (Free Colab)
+1. Installs dependencies
+2. Clones the repo
+3. Preprocesses the Nigeria‑only dataset
+4. Runs QLoRA on Llama-3.2-3B-Instruct (T4‑friendly preset)
+5. Saves the adapter to Google Drive
+6. Optionally pushes it to Hugging Face Hub
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/agroguardaiaOS/agroguardai-llm/blob/main/notebooks/colab_train.ipynb)
-
-Click the badge above to open the notebook in Colab with a free T4 GPU. The notebook:
-1. Installs all dependencies
-2. Clones the repo and preprocesses the dataset
-3. Runs QLoRA fine-tuning on Mistral-7B (8-bit paged AdamW)
-4. Saves the adapter to your Google Drive
-5. Runs a test inference
-
-Training 452 entries for 2 epochs takes ~90 minutes on a T4.
-
-### 4. Train Locally
+4. Train Locally
 
 ```bash
-# 1. Preprocess data (use pre-split train/test sets)
-python src/preprocess.py --data data/processed/train.json --output data/processed/ --val-data data/processed/test.json --seed 42
+# Preprocess the Nigeria‑only dataset
+python scripts/preprocess.py --data data/agri_qa_nigeria.json --output data/processed/
 
-# 2. Review LoRA config, then train
-bash scripts/train.sh
+# Start training with the 3B preset
+python scripts/finetune_llama3.py --model-family llama3-3b --output ./models/llama3-agricultural-qlora
 ```
 
-Edit `config/lora_config.yaml` to switch between Mistral-7B and TinyLlama, adjust rank,
-or toggle 4-bit quantization.
-
-### 5. Evaluate
+5. Evaluate
 
 ```bash
-# Runs our model head-to-head against GPT-4, Claude, DeepSeek
-# on safety, dialect fidelity, and hallucination rate
-bash scripts/evaluate.sh
+python scripts/evaluate_nigeria.py \
+    --data data/processed/test_nigeria.json \
+    --models agroguardai,gpt5,claude,gemini,grok,deepseek \
+    --adapter ./models/llama3-agricultural-qlora \
+    --output results/
 ```
 
-## Results
+Results
 
-*To be filled after evaluation run — results are stored in `results/evaluation_report.json`.*
+To be filled after the next evaluation run.
 
-| Model | Safety (0-1) | Dialect Fidelity | Hallucination Rate | BLEU |
-|-------|-------------|------------------|--------------------|------|
-| **AgroguardAI-LLM** | — | — | — | — |
-| GPT-4 | — | — | — | — |
-| Claude 4 | — | — | — | — |
-| DeepSeek V3 | — | — | — | — |
+Model Safety (0–1) Dialect Fidelity Hallucination
+AgroguardAI‑LLM — — —
+GPT‑5 — — —
+Claude — — —
+Gemini — — —
+Grok — — —
+DeepSeek — — —
 
-**Metrics:**
-- **Safety** — Does the answer avoid dangerous or banned recommendations?
-- **Dialect Fidelity** — Is the response in the same dialect the farmer used?
-- **Hallucination Rate** — Fraction of claims not verifiable against agricultural reference.
-- **BLEU** — Overlap with expert-written reference answer (useful but not sufficient alone).
+Metrics:
 
-## Dataset
+· Safety — Avoids banned substances, overdose, and missing PPE warnings.
+· Dialect Fidelity — Response is in the same Nigerian language as the question.
+· Hallucination — Claims are factually consistent with known agronomic references.
 
-The dataset (`data/agri_qa.json`) contains **500 farmer Q&A pairs** in 12 dialects
-(Amharic, English, Hausa, Hindi, Igbo, Kikuyu, Luo, Pidgin English, Punjabi, Swahili,
-Tamil, Yoruba) spanning **25 crops** across **9 regions**. The dataset is split into:
-- **Train set** (`data/processed/train.json`): 452 entries
-- **Held-out test set** (`data/processed/test.json`): 48 entries (4 per dialect, stratified)
+Dataset
 
-~83% of entries have diagnostic, evidence-backed answers with specific treatment rates,
-application methods, and safety intervals. ~17% are safe refusal responses for ambiguous
-symptoms that require in-person diagnosis.
+The dataset (data/agri_qa_nigeria.json) contains farmer Q&A pairs in
+Hausa, Igbo, Yoruba, and Fulfulde covering 25 crops across Nigeria.
+All entries are reviewed by native speakers and agronomists for safety and
+dialect accuracy. It is split into a training set and a held‑out test set.
 
 Each entry includes:
 
-- `id` — Unique identifier
-- `region` — Country / growing zone
-- `dialect` — Language or dialect the question was asked in
-- `crop` — Target crop
-- `question` — The farmer's exact words
-- `answer` — A safe, evidence-backed response
-- `source` — Reference (research paper, extension guide, agronomist review)
+· id — Unique identifier
+· region — Nigeria
+· dialect — Hausa, Igbo, Yoruba, or Fulfulde
+· crop — Target crop
+· question — The farmer’s exact words
+· answer — A safe, evidence‑backed response in the same dialect
+· source — Reference (extension guide, research paper, agronomist review)
+· category — Pest Management, Disease Diagnosis, Soil Nutrition, Pesticide Safety, Cultural Practice, or Refusal
+· safety_critical — Boolean flag for entries involving pesticide dosages
 
-See `data/README.md` for the full collection log.
+Model
 
-## Model
+We fine‑tune Llama‑3.2‑3B‑Instruct (and larger variants when compute permits)
+using QLoRA:
 
-We fine-tune **Mistral-7B-Instruct-v0.3** (default) or **TinyLlama-1.1B** using QLoRA:
+· 4‑bit NF4 quantization
+· Low‑rank adapters on all linear projection layers
+· Training on a single T4 GPU (free Colab) or consumer hardware
 
-- 4-bit NF4 quantization of the base model
-- Low-rank adapters on all linear projection layers
-- Training on a single consumer GPU (RTX 3090/4090 or A10G)
+The LoRA adapter is only a few megabytes and can be shared on Hugging Face Hub.
 
-The LoRA adapter is ~50 MB and can be shared on Hugging Face Hub alongside the base model ID.
+Roadmap
 
-## Roadmap
+· Build Nigeria‑only dataset across 4 languages
+· Prepare QLoRA fine‑tuning pipeline for Llama‑3
+· Complete fine‑tuning and publish safety benchmark against GPT‑5 & Claude
+· Expand Fulfulde coverage to 100+ entries
+· Add vision encoder for crop disease photos
+· Deploy to WhatsApp / Telegram for direct farmer access
+· Publish a peer‑reviewed safety evaluation
 
-- [x] Expand dataset to 500+ verified Q&A pairs across 12 dialects
-- [ ] Evaluate against GPT-4, Claude, and DeepSeek on safety and dialect fidelity
-- [ ] Expand dataset to 1,000+ verified Q&A pairs across 15 languages
-- [ ] Add vision encoder for crop disease photos
-- [ ] Distill to a 1–3B model for on-device inference
-- [ ] Integrate with WhatsApp and Telegram bots for direct farmer access
-- [ ] Publish a peer-reviewed safety evaluation
+License
 
-## License
+Apache 2.0 — see LICENSE.
 
-Apache 2.0 — see [LICENSE](./LICENSE).
+Citation
 
-## Citation
-
-```bibtex
+bibtex
 @software{agroguardai_llm,
   author = {AgroguardAI Contributors},
-  title = {AgroguardAI-LLM: A Safety-First Agricultural Language Model},
-  year = {2025},
+  title = {AgroguardAI-LLM: A Safety-First Agricultural Language Model for Nigerian Languages},
+  year = {2026},
   url = {https://github.com/agroguardaiaOS/agroguardai-llm}
 }
-```

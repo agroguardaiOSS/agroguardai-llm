@@ -1,31 +1,37 @@
 {
   "$schema": "https://raw.githubusercontent.com/agroguardaiaOS/agroguardai-llm/main/data/qa_schema.json",
-  "description": "QA pair template for AgroguardAI-LLM dataset. Copy this block, fill in your data, and append to data/agri_qa.json. See data/CONTRIBUTING.md for the full guide.",
+  "description": "QA pair template for the AgroGuardAI‑LLM Nigerian agricultural safety dataset. All entries must use Hausa, Igbo, Yoruba, or Fulfulde. Copy the template block, fill in your data, and append to data/agri_qa.json. Refer to data/CONTRIBUTING.md for full guidelines.",
   "template": {
     "id": "agri-NNN",
-    "region": "Country or growing zone (e.g. Nigeria, Kenya, India)",
-    "dialect": "Language or dialect of the question (e.g. Yoruba, Pidgin English, Swahili, Hindi)",
-    "crop": "Lowercase crop name (e.g. cassava, maize, tomato, rice, cowpea, mango)",
-    "question": "The farmer's exact words — do not clean up grammar or code-switching",
-    "answer": "Safe, evidence-backed agronomic advice in the SAME dialect as the question. See CONTRIBUTING.md for answer rules.",
-    "source": "Reference or reviewer name (e.g. IITA Guide, Year; reviewed by Name, role)"
+    "region": "Nigeria",
+    "dialect": "Hausa | Igbo | Yoruba | Fulfulde",
+    "crop": "lowercase crop name (e.g. maize, cassava, yam, cowpea, tomato)",
+    "category": "Pest Management | Disease Diagnosis | Soil Nutrition | Pesticide Safety | Cultural Practice | Refusal",
+    "safety_critical": true,
+    "question": "The farmer's exact words – keep original grammar, code‑switching, and local expressions.",
+    "answer": "Safe, evidence‑based agronomic advice in the SAME dialect as the question. Follow the answer rules in CONTRIBUTING.md.",
+    "source": "Reference or reviewer name (e.g. NAERLS Guide, Year; reviewed by [Name], [role])"
   },
   "example_good": {
-    "id": "agri-011",
+    "id": "agri-001",
     "region": "Nigeria",
-    "dialect": "Pidgin English",
-    "crop": "cassava",
-    "question": "My cassava root dey soft and e get bad smell when I harvest. The leaf still green o, but inside the root don spoil. Wetin cause am?",
-    "answer": "Wetin you dey describe na cassava root rot, and e get two kind wey common: (1) Soft rot wey bacteria dey cause — this one dey happen when water stand for the field too long, or when you harvest and the root stay for wet ground. The smell na sign say bacteria don enter. (2) Root rot wey fungi dey cause — this one dey show brown dry patches inside the root before the soft stage. Wetin to do: First thing, harvest every mature cassava NOW — the longer they stay, the more go spoil. Dig drainage channels around your field to carry water comot. For the cassava wey remain, apply Trichoderma powder (biological fungicide) to the soil around the stem base — this fungus dey fight the rot fungus for ground. Next season: plant on ridges (not flat ground), use TME 419 variety (e resistant to root rot), and rotate to a legume like cowpea for at least one season before you plant cassava for that same land again. No chop or sell the rotten roots — bury them far from the field.",
-    "source": "IITA Cassava Root Rot Management Guide; NRCRI Umudike extension bulletin; reviewed by cassava pathologist"
+    "dialect": "Hausa",
+    "crop": "cowpea",
+    "category": "Pest Management",
+    "safety_critical": false,
+    "question": "Barka dai. Ganyayyakin wake na suna cike da ramuka kanana, kuma ina ganin wasu tsutsotsi korenaye a jikinsu. Wane irin kwari ne wannan, me ya kamata na yi?",
+    "answer": "Wannan matsala ce daga 'Bean pod borer' (Maruca vitrata). Tsutsar tana shiga cikin ganyen wake tana toshe ramuka. Abin da za ka yi: (1) Diba duk tsutsotsin da ka gani da hannu da sassafe. (2) Fesa maganin Bt (Bacillus thuringiensis) a bisa ganyen, musamman a lokacin da wake ya fara fitowa. (3) Ba ka manta da juya amfanin gona a gona domin karya zagayen rayuwar kwarin. Wannan zai taimaka wajen rage yawan su a kakar gaba.",
+    "source": "NAERLS Cowpea Pest Guide, Zaria; reviewed by agronomist, Kano State ADP"
   },
   "example_refusal": {
-    "id": "agri-012",
-    "region": "Kenya",
-    "dialect": "Swahili",
-    "crop": "maize",
-    "question": "Mahindi yangu hayakua vizuri na majani yana rangi ya zambarau. Nilitumia mbolea ya DAP lakini haikusaidia. Kuna mtu alisema ni ugonjwa wa virusi, mwingine akasema ni upungufu wa virutubisho. Nifanye nini?",
-    "answer": "Shikamoo. Rangi ya zambarau kwenye majani ya mahindi inaweza kuwa na sababu nyingi — inaweza kuwa upungufu wa fosforasi, au ugonjwa wa virusi, au hata uharibifu wa mizizi kutoka kwa wadudu wa ardhini. Mimea inayoonyesha dalili za aina moja inaweza kuwa na matatizo tofauti kabisa. Kwa sababu hii, siwezi kukupa utambuzi sahihi kutoka kwa maelezo pekee. Hiki ndicho unachopaswa kufanya: Chukua mimea michache yenye dalili (pamoja na mizizi) na upeleke katika ofisi ya karibu ya kilimo ya kaunti (county extension office) au KALRO. Waambie historia yote — tarehe ya kupanda, mbolea uliyotumia, na mwelekeo wa dalili. Watachunguza na kukupa ushauri sahihi. Usitumie dawa yoyote kabla ya kupata utambuzi sahihi — inaweza kuwa upotevu wa pesa na inaweza kuharibu mazingira.",
-    "source": "KALRO Maize Diagnostics Protocol; FAO Guide to Nutrient Deficiency Identification"
+    "id": "agri-002",
+    "region": "Nigeria",
+    "dialect": "Yoruba",
+    "crop": "yam",
+    "category": "Refusal",
+    "safety_critical": false,
+    "question": "Eku oo. Ese mi rẹ bẹ bẹ. Awọn isu mi ko tobi rara, ati awọn ewe wọn ti di ofeefee. Mo ti lo ẹlẹmi ṣugbọn ko ṣiṣẹ. Kini o le jẹ?",
+    "answer": "Oro naa da bi ẹni pe o le jẹ arun ti a n pe ni 'yam mosaic virus' tabi 'nematode' lati inu ile. Awọn arun wọnyi le ṣe afihan awọn ami ti o jọ ara wọn, nitorina ko ṣe ṣee ṣe lati ṣe iwadii to peye lati inu apejuwe yin nikan. Ohun ti o yẹ ki o ṣe ni: gbe apẹẹrẹ isu ti o ni awọn ami aisan, pẹlu ewe, isu, ati ile lati ibi ti o ti gbin, lọ si ọfiisi ti o sunmọ julọ ti ile-iṣẹ ti n ṣe iranlọwọ lori oko (ADP) tabi ile-ẹkọ iwadii ti ilu rẹ. Wọn yoo ṣayẹwo rẹ ki wọn fun ọ ni imọran ti o peye. Maṣe lo oogun eyikeyi titi ti o fi gba imọran to daju, nitori pe o le jẹ ki o padanu owo ati pe o le ṣe ipalara fun ilẹ ati awọn irugbin rẹ.",
+    "source": "IITA Yam Diagnostic Protocol; FAO Guide to Safe Pesticide Use"
   }
 }
